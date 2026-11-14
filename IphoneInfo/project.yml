@@ -1,4 +1,4 @@
-name: Sonda
+name: IphoneInfo
 options:
   bundleIdPrefix: com.azvdo
   deploymentTarget:
@@ -15,56 +15,57 @@ packages:
     from: "13.12.0"
 
 targets:
-  Sonda:
+  IphoneInfo:
     type: application
     platform: iOS
     sources:
-      - path: Sonda
+      - path: IphoneInfo
     dependencies:
       - package: GoogleMobileAds
-      - target: SondaWidget
+      - target: IphoneInfoWidget
         embed: true
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.azvdo.sonda
-        INFOPLIST_FILE: Sonda/App/Info.plist
-        CODE_SIGN_ENTITLEMENTS: Sonda/App/Sonda.entitlements
-        SWIFT_OBJC_BRIDGING_HEADER: Sonda/Native/Sonda-Bridging-Header.h
+        PRODUCT_BUNDLE_IDENTIFIER: com.azvdo.iphoneinfo
+        INFOPLIST_FILE: IphoneInfo/App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: IphoneInfo/App/Sonda.entitlements
+        SWIFT_OBJC_BRIDGING_HEADER: IphoneInfo/Native/Sonda-Bridging-Header.h
         TARGETED_DEVICE_FAMILY: "1,2"
         GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_CFBundleDisplayName: Sonda
+        INFOPLIST_KEY_CFBundleDisplayName: Iphone Info
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
-        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: A Sonda usa a localização para mostrar o nome da rede Wi-Fi e a bússola.
-        INFOPLIST_KEY_NSMicrophoneUsageDescription: A Sonda usa o microfone para medir o nível de ruído em decibéis.
-        INFOPLIST_KEY_NSMotionUsageDescription: A Sonda usa os sensores de movimento para mostrar acelerômetro, giroscópio e barômetro.
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: O Iphone Info usa a localização para mostrar o nome da rede Wi-Fi e a bússola.
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: O Iphone Info usa o microfone para medir o nível de ruído em decibéis.
+        INFOPLIST_KEY_NSMotionUsageDescription: O Iphone Info usa os sensores de movimento para mostrar acelerômetro, giroscópio e barômetro.
         CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: WRPL8T3887
         ENABLE_TESTABILITY: YES
 
-  SondaWidget:
+  IphoneInfoWidget:
     type: app-extension
     platform: iOS
     sources:
       - path: Widget
-      - path: Sonda/Monitoring/WidgetSnapshot.swift
-      - path: Sonda/Monitoring/Percent.swift
+      - path: IphoneInfo/Monitoring/WidgetSnapshot.swift
+      - path: IphoneInfo/Monitoring/Percent.swift
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.azvdo.sonda.widget
+        PRODUCT_BUNDLE_IDENTIFIER: com.azvdo.iphoneinfo.widget
         INFOPLIST_FILE: Widget/Info.plist
         CODE_SIGN_ENTITLEMENTS: Widget/SondaWidget.entitlements
         GENERATE_INFOPLIST_FILE: NO
         SKIP_INSTALL: YES
 
-  SondaTests:
+  IphoneInfoTests:
     type: bundle.unit-test
     platform: iOS
     sources:
-      - path: SondaTests
+      - path: IphoneInfoTests
     dependencies:
-      - target: Sonda
+      - target: IphoneInfo
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.azvdo.sondaTests
+        PRODUCT_BUNDLE_IDENTIFIER: com.azvdo.iphoneinfoTests
         GENERATE_INFOPLIST_FILE: YES

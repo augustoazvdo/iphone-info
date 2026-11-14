@@ -1,5 +1,5 @@
 import XCTest
-@testable import Sonda
+@testable import IphoneInfo
 
 final class SensorSheetTests: XCTestCase {
     private func make(hasBarometer: Bool) -> [SheetSection] {

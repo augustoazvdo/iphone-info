@@ -1,5 +1,5 @@
 import XCTest
-@testable import Sonda
+@testable import IphoneInfo
 
 final class PainelSheetTests: XCTestCase {
     private let memory = MemorySnapshot(

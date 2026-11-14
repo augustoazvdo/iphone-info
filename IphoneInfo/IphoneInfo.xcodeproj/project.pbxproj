@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D07FC982483DA5C021B0C2 /* SensorSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9BADDE3E9AB9326352DF0 /* SensorSheetTests.swift */; };
+		158566F723A90F1861FD861A /* FrequencyProbe.c in Sources */ = {isa = PBXBuildFile; fileRef = B43D1CBD55263D688C6E0594 /* FrequencyProbe.c */; };
+		25912CFE0F337C8DFC81E030 /* PainelSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CEDF8A46F8D5341C02E402 /* PainelSheetTests.swift */; };
+		25F186DAAADDB0780890AB1A /* MonetizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F6D509861248129C320A9 /* MonetizationTests.swift */; };
+		2650611FCF8B3090441B73E1 /* BenchmarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC7AFE5BA7F03DC1770FC17 /* BenchmarksTests.swift */; };
+		2D320292F1AC4561B956D871 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319B348F5A03C1DB22539B40 /* WidgetSnapshot.swift */; };
+		31CC5C882187E71CEA31A1DF /* FloatingMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0314B76A4601530CB86662 /* FloatingMeterTests.swift */; };
+		33C66FB0102E10AFE86F3416 /* AdUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C419976145CA17E8079D1F /* AdUnits.swift */; };
+		35903669E108F4A3D358A830 /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EBB8456CA5E387BD3AFE3 /* Percent.swift */; };
+		4725EC55A658A715D4CF4A02 /* BatteryEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BA4EA4D7FAF6A682029576 /* BatteryEstimate.swift */; };
+		47E37AE4DAC3921D9E2A5B75 /* SpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA106FA946BC8A81422ACD2 /* SpeedTest.swift */; };
+		500534DCFD0EA83123570606 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD285B6C7B7298D4C8AD9A5C /* Components.swift */; };
+		6121C8CB8627A91FDB2510A4 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319B348F5A03C1DB22539B40 /* WidgetSnapshot.swift */; };
+		6341DE036E5A012CF420BBEF /* FloatingMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3464C368B7E5AFB2AB48AFD /* FloatingMeter.swift */; };
+		6879151A1A1430310BD8D1D8 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = EADC78DC7815E321A52D3D6D /* GoogleMobileAds */; };
+		69EE5D366A2DED026DF3BF6B /* CompassReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAA64B1E9ECC75A580F4485 /* CompassReadingTests.swift */; };
+		6CDAC1BF72B9D41608F71DCD /* SensorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D783F4B54539CE74353489 /* SensorSheet.swift */; };
+		7069B255E04B9AF8311210D7 /* WidgetSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C255BCC5893B4902425DE3 /* WidgetSnapshotTests.swift */; };
+		769075150316E4F31B4F7582 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FFD0BEE400897C91217383 /* DeviceView.swift */; };
+		7805B3A3AE2F5A012D0311DF /* ToolBench.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B738FED5EE6444037690A62 /* ToolBench.swift */; };
+		7831D96DAC83D350C21A97C7 /* SpeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B24D653EE943617270AF8 /* SpeedView.swift */; };
+		79359DA24D44F9832744A4EF /* FormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D35CF880B77680AAFF5139 /* FormatTests.swift */; };
+		7D55A63BEBE33F77ABC8E7E3 /* SondaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC46A7E6B75CE1D13DBB11 /* SondaApp.swift */; };
+		81021C85F68434E2E5EE3ED0 /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EBB8456CA5E387BD3AFE3 /* Percent.swift */; };
+		8229C4BB3C3A709569B77838 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94608596ECCBD5D8D3CE1B8C /* ToolsView.swift */; };
+		82BAD99FD0B8A7B992A1BAD4 /* SessionTrafficTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D649CD1B45C473D970089EF6 /* SessionTrafficTests.swift */; };
+		86C56C9C02A097F6F8130CBE /* MotionMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B165149E86920D61F4F219C /* MotionMonitor.swift */; };
+		870ACE0D321F9D893811B50C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AC9C5D31F655AE50F8FDB /* CameraView.swift */; };
+		888470AAF3A2A2F37894B924 /* Benchmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DF69A92A9236A6E92528 /* Benchmarks.swift */; };
+		8CF2AB5B11DF5E84B9411DE9 /* ToolBenchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41941A21522D516CCEEEF45 /* ToolBenchTests.swift */; };
+		8F79F96985CA78AE74B91B79 /* FloatingMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4B196943ADC255238A8C3 /* FloatingMeterView.swift */; };
+		973C8F68CFB7771AF0F11BE9 /* SondaTestsSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C16070BF3583972C81D31B3 /* SondaTestsSupport.swift */; };
+		9DB512E76BFFB9F216F8D784 /* DeviceCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054512C0B6A980C325DFD1B6 /* DeviceCatalog.swift */; };
+		9F01DFD670685BBE45DCA29A /* CPUSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEF16FDB58FE7487925CA5E /* CPUSampler.swift */; };
+		A148C6858AC10B7FE859D467 /* DeviceCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BAE49DF3F22E108AB1096 /* DeviceCheckView.swift */; };
+		A2C77203A8A0D57C0D13AB10 /* DeviceCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E2EB9223C19100B25C55A /* DeviceCatalogTests.swift */; };
+		A83AE82B91D9A3E0FECFFF50 /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118465768485AA4EE68C9BD1 /* Formatting.swift */; };
+		ABA068F3ED64FB65B0A870BD /* Monetization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEF48D07C481967A7B0C34B /* Monetization.swift */; };
+		AD08467D955F82B13FE01733 /* NetworkSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E79304E17F2B0440D87CADA /* NetworkSampler.swift */; };
+		AD89C766565E747D3C2B98AD /* SystemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABEEA8770203BCEF89286B2 /* SystemInfo.swift */; };
+		B36CC56E11686E27F4FEC9A8 /* PainelSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48437FCA5533F7629BB0188 /* PainelSheet.swift */; };
+		B495A98BAB7433B33554D278 /* SpeedTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970AB342BE5993A808386E4C /* SpeedTestTests.swift */; };
+		B629AC8728F3909346B147AC /* BatteryEstimateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE704B9D44FB31D550ADE8E /* BatteryEstimateTests.swift */; };
+		C14AAF39348F46736CE13F2B /* SensorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20AC00CDA4E161FF70D2DF7 /* SensorsView.swift */; };
+		C1DCBCF0051C18A8EB4BC2AB /* IphoneInfoWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0D6A8C6D0F34E57A4F416A62 /* IphoneInfoWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C381404C10BC21FC6C67404F /* DeviceSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6879F1ADC8725017AD574D18 /* DeviceSheet.swift */; };
+		C465EA42E72074DAE4436FEC /* CameraInventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E99C80667709DAE693588 /* CameraInventoryTests.swift */; };
+		C7C655BA6C27F2D3A40BAF7D /* DeviceSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2EF415AA904357EB7413BA /* DeviceSheetTests.swift */; };
+		CDB7307AFB37ABF77558886F /* LiveMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E925718EEB69C220C1C4D9A /* LiveMonitor.swift */; };
+		CDC5801ACBD68C1464121021 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C092FF00F3764BE24882E56 /* CompassView.swift */; };
+		CE703B10AC386AB66D9E39FC /* CompassReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56009C69151B435359B5215E /* CompassReading.swift */; };
+		CFE2D479A440D6658DC1B250 /* SondaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515E0F94D693FA8D29C6D4D7 /* SondaWidget.swift */; };
+		D1E43D92D4D9BF2A62EB16AC /* BenchmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464CA0E09BAD2B20C52E14B /* BenchmarkView.swift */; };
+		DB514156A3A6FE7BBE84D962 /* SheetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D91E58C8C4C05F18113EF /* SheetModel.swift */; };
+		DFA950709F1D7AE21BBE798A /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ADD8C6037CDDF9E877410A /* AdBannerView.swift */; };
+		E0CE6D550C99DCF5B1CBAE4F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD31941E964203D0CC4718B1 /* DashboardView.swift */; };
+		E3709F63D2E08D6E77913760 /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650FF2CBFEC634D96AB30A55 /* NetworkView.swift */; };
+		E839AB01AAD34C75F722D8A2 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA5C0B8D0468B7F1E59E2E /* MoreView.swift */; };
+		EC25C7F59846634296E08FB1 /* BatteryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0885C5333BBD00604AD28B /* BatteryDetailView.swift */; };
+		EC8CEBF990328B5879A4C448 /* DeviceCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D5DB462C80661BE53BA64 /* DeviceCheckTests.swift */; };
+		ECA3DD4047238618C4979EEC /* CameraInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F56BA34A2ACB032654904A /* CameraInventory.swift */; };
+		F0A638281315F9DEA4AD1B5F /* DeviceCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46734A937C7D434113A9791 /* DeviceCheck.swift */; };
+		FEBD06B9F0DB1F9900D1C342 /* MemoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87CD5A382E6D0D22380359 /* MemoryInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16F0D7A5D6818AC6F4353089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EE35674613E50A28B2E5BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F71CF564564B447B9F15AE12;
+			remoteInfo = IphoneInfoWidget;
+		};
+		1DB799C600F378C0FA00A6EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EE35674613E50A28B2E5BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47A5885B6E479FE2BE80EA39;
+			remoteInfo = IphoneInfo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE6E28BFD91E68A4BC48866F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C1DCBCF0051C18A8EB4BC2AB /* IphoneInfoWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		054512C0B6A980C325DFD1B6 /* DeviceCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCatalog.swift; sourceTree = "<group>"; };
+		0CC7AFE5BA7F03DC1770FC17 /* BenchmarksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarksTests.swift; sourceTree = "<group>"; };
+		0D6A8C6D0F34E57A4F416A62 /* IphoneInfoWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = IphoneInfoWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F9E99C80667709DAE693588 /* CameraInventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraInventoryTests.swift; sourceTree = "<group>"; };
+		118465768485AA4EE68C9BD1 /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		1CFA5C0B8D0468B7F1E59E2E /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		2082414FCC404152348CF6F9 /* Sonda-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sonda-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B0D5DB462C80661BE53BA64 /* DeviceCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCheckTests.swift; sourceTree = "<group>"; };
+		2C16070BF3583972C81D31B3 /* SondaTestsSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SondaTestsSupport.swift; sourceTree = "<group>"; };
+		2E925718EEB69C220C1C4D9A /* LiveMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMonitor.swift; sourceTree = "<group>"; };
+		301D91E58C8C4C05F18113EF /* SheetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModel.swift; sourceTree = "<group>"; };
+		319B348F5A03C1DB22539B40 /* WidgetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshot.swift; sourceTree = "<group>"; };
+		3464CA0E09BAD2B20C52E14B /* BenchmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkView.swift; sourceTree = "<group>"; };
+		3A0314B76A4601530CB86662 /* FloatingMeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMeterTests.swift; sourceTree = "<group>"; };
+		3B2EF415AA904357EB7413BA /* DeviceSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSheetTests.swift; sourceTree = "<group>"; };
+		4B738FED5EE6444037690A62 /* ToolBench.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBench.swift; sourceTree = "<group>"; };
+		515E0F94D693FA8D29C6D4D7 /* SondaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SondaWidget.swift; sourceTree = "<group>"; };
+		526201328AF3F091E1ECC209 /* IphoneInfoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = IphoneInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		554A1E29C8889969C7E4378C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		56009C69151B435359B5215E /* CompassReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassReading.swift; sourceTree = "<group>"; };
+		567AC9C5D31F655AE50F8FDB /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		571EBB8456CA5E387BD3AFE3 /* Percent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percent.swift; sourceTree = "<group>"; };
+		5BF4B196943ADC255238A8C3 /* FloatingMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMeterView.swift; sourceTree = "<group>"; };
+		5E79304E17F2B0440D87CADA /* NetworkSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSampler.swift; sourceTree = "<group>"; };
+		650FF2CBFEC634D96AB30A55 /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
+		66F56BA34A2ACB032654904A /* CameraInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraInventory.swift; sourceTree = "<group>"; };
+		6879F1ADC8725017AD574D18 /* DeviceSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSheet.swift; sourceTree = "<group>"; };
+		6A0885C5333BBD00604AD28B /* BatteryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryDetailView.swift; sourceTree = "<group>"; };
+		6ABEEA8770203BCEF89286B2 /* SystemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemInfo.swift; sourceTree = "<group>"; };
+		6DAA64B1E9ECC75A580F4485 /* CompassReadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassReadingTests.swift; sourceTree = "<group>"; };
+		75BA4EA4D7FAF6A682029576 /* BatteryEstimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryEstimate.swift; sourceTree = "<group>"; };
+		75C255BCC5893B4902425DE3 /* WidgetSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshotTests.swift; sourceTree = "<group>"; };
+		7B165149E86920D61F4F219C /* MotionMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionMonitor.swift; sourceTree = "<group>"; };
+		7C092FF00F3764BE24882E56 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		85D35CF880B77680AAFF5139 /* FormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatTests.swift; sourceTree = "<group>"; };
+		8761236C7AA836DB4B1D411E /* SondaWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SondaWidget.entitlements; sourceTree = "<group>"; };
+		8A87CD5A382E6D0D22380359 /* MemoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryInfo.swift; sourceTree = "<group>"; };
+		8BEF16FDB58FE7487925CA5E /* CPUSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUSampler.swift; sourceTree = "<group>"; };
+		91D31C12725D26CD7A9E5F2C /* FrequencyProbe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrequencyProbe.h; sourceTree = "<group>"; };
+		92ADD8C6037CDDF9E877410A /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
+		94608596ECCBD5D8D3CE1B8C /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		94BA8C6FBE34500F48B5BC7A /* IphoneInfo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = IphoneInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		970AB342BE5993A808386E4C /* SpeedTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTestTests.swift; sourceTree = "<group>"; };
+		995B24D653EE943617270AF8 /* SpeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedView.swift; sourceTree = "<group>"; };
+		9AB9BADDE3E9AB9326352DF0 /* SensorSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSheetTests.swift; sourceTree = "<group>"; };
+		9DA106FA946BC8A81422ACD2 /* SpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTest.swift; sourceTree = "<group>"; };
+		A46734A937C7D434113A9791 /* DeviceCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCheck.swift; sourceTree = "<group>"; };
+		B3464C368B7E5AFB2AB48AFD /* FloatingMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMeter.swift; sourceTree = "<group>"; };
+		B43D1CBD55263D688C6E0594 /* FrequencyProbe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FrequencyProbe.c; sourceTree = "<group>"; };
+		B7FFD0BEE400897C91217383 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		C047DF69A92A9236A6E92528 /* Benchmarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Benchmarks.swift; sourceTree = "<group>"; };
+		C2CEDF8A46F8D5341C02E402 /* PainelSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainelSheetTests.swift; sourceTree = "<group>"; };
+		C41941A21522D516CCEEEF45 /* ToolBenchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBenchTests.swift; sourceTree = "<group>"; };
+		C4C419976145CA17E8079D1F /* AdUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdUnits.swift; sourceTree = "<group>"; };
+		CD285B6C7B7298D4C8AD9A5C /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		CE0F6D509861248129C320A9 /* MonetizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetizationTests.swift; sourceTree = "<group>"; };
+		D48437FCA5533F7629BB0188 /* PainelSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainelSheet.swift; sourceTree = "<group>"; };
+		D649CD1B45C473D970089EF6 /* SessionTrafficTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTrafficTests.swift; sourceTree = "<group>"; };
+		D6BC46A7E6B75CE1D13DBB11 /* SondaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SondaApp.swift; sourceTree = "<group>"; };
+		D77CDF31C14453422822722A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D9D783F4B54539CE74353489 /* SensorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSheet.swift; sourceTree = "<group>"; };
+		DE7E2EB9223C19100B25C55A /* DeviceCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCatalogTests.swift; sourceTree = "<group>"; };
+		DFEF48D07C481967A7B0C34B /* Monetization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monetization.swift; sourceTree = "<group>"; };
+		E49BAE49DF3F22E108AB1096 /* DeviceCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCheckView.swift; sourceTree = "<group>"; };
+		E649DF6FF441CCDA1BD26EA8 /* Sonda.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sonda.entitlements; sourceTree = "<group>"; };
+		EFE704B9D44FB31D550ADE8E /* BatteryEstimateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryEstimateTests.swift; sourceTree = "<group>"; };
+		F20AC00CDA4E161FF70D2DF7 /* SensorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsView.swift; sourceTree = "<group>"; };
+		FD31941E964203D0CC4718B1 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F695F82F776ACCCFB6C7FF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6879151A1A1430310BD8D1D8 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0977F762CC18642DC781FE88 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D77CDF31C14453422822722A /* Info.plist */,
+				8761236C7AA836DB4B1D411E /* SondaWidget.entitlements */,
+				515E0F94D693FA8D29C6D4D7 /* SondaWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		2151CCFC651E6F7168A929C9 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				B43D1CBD55263D688C6E0594 /* FrequencyProbe.c */,
+				91D31C12725D26CD7A9E5F2C /* FrequencyProbe.h */,
+				2082414FCC404152348CF6F9 /* Sonda-Bridging-Header.h */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
+		5221A89E6A520BECC51D05CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92ADD8C6037CDDF9E877410A /* AdBannerView.swift */,
+				6A0885C5333BBD00604AD28B /* BatteryDetailView.swift */,
+				3464CA0E09BAD2B20C52E14B /* BenchmarkView.swift */,
+				567AC9C5D31F655AE50F8FDB /* CameraView.swift */,
+				7C092FF00F3764BE24882E56 /* CompassView.swift */,
+				CD285B6C7B7298D4C8AD9A5C /* Components.swift */,
+				FD31941E964203D0CC4718B1 /* DashboardView.swift */,
+				E49BAE49DF3F22E108AB1096 /* DeviceCheckView.swift */,
+				B7FFD0BEE400897C91217383 /* DeviceView.swift */,
+				5BF4B196943ADC255238A8C3 /* FloatingMeterView.swift */,
+				118465768485AA4EE68C9BD1 /* Formatting.swift */,
+				1CFA5C0B8D0468B7F1E59E2E /* MoreView.swift */,
+				650FF2CBFEC634D96AB30A55 /* NetworkView.swift */,
+				F20AC00CDA4E161FF70D2DF7 /* SensorsView.swift */,
+				995B24D653EE943617270AF8 /* SpeedView.swift */,
+				94608596ECCBD5D8D3CE1B8C /* ToolsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52843A61537E3CCF5AF91420 /* IphoneInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F8F4EB7521D3684AE09DB47A /* App */,
+				E7B2375E40C2650591957B92 /* Monitoring */,
+				2151CCFC651E6F7168A929C9 /* Native */,
+				5221A89E6A520BECC51D05CE /* Views */,
+			);
+			path = IphoneInfo;
+			sourceTree = "<group>";
+		};
+		90D6C6DE81736154CD9925EC = {
+			isa = PBXGroup;
+			children = (
+				52843A61537E3CCF5AF91420 /* IphoneInfo */,
+				D8808D7395CAC8A22A0B40C9 /* IphoneInfoTests */,
+				0977F762CC18642DC781FE88 /* Widget */,
+				AD86944C5A8B2DBA1F4F79C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD86944C5A8B2DBA1F4F79C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94BA8C6FBE34500F48B5BC7A /* IphoneInfo.app */,
+				526201328AF3F091E1ECC209 /* IphoneInfoTests.xctest */,
+				0D6A8C6D0F34E57A4F416A62 /* IphoneInfoWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8808D7395CAC8A22A0B40C9 /* IphoneInfoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFE704B9D44FB31D550ADE8E /* BatteryEstimateTests.swift */,
+				0CC7AFE5BA7F03DC1770FC17 /* BenchmarksTests.swift */,
+				0F9E99C80667709DAE693588 /* CameraInventoryTests.swift */,
+				6DAA64B1E9ECC75A580F4485 /* CompassReadingTests.swift */,
+				DE7E2EB9223C19100B25C55A /* DeviceCatalogTests.swift */,
+				2B0D5DB462C80661BE53BA64 /* DeviceCheckTests.swift */,
+				3B2EF415AA904357EB7413BA /* DeviceSheetTests.swift */,
+				3A0314B76A4601530CB86662 /* FloatingMeterTests.swift */,
+				85D35CF880B77680AAFF5139 /* FormatTests.swift */,
+				CE0F6D509861248129C320A9 /* MonetizationTests.swift */,
+				C2CEDF8A46F8D5341C02E402 /* PainelSheetTests.swift */,
+				9AB9BADDE3E9AB9326352DF0 /* SensorSheetTests.swift */,
+				D649CD1B45C473D970089EF6 /* SessionTrafficTests.swift */,
+				2C16070BF3583972C81D31B3 /* SondaTestsSupport.swift */,
+				970AB342BE5993A808386E4C /* SpeedTestTests.swift */,
+				C41941A21522D516CCEEEF45 /* ToolBenchTests.swift */,
+				75C255BCC5893B4902425DE3 /* WidgetSnapshotTests.swift */,
+			);
+			path = IphoneInfoTests;
+			sourceTree = "<group>";
+		};
+		E7B2375E40C2650591957B92 /* Monitoring */ = {
+			isa = PBXGroup;
+			children = (
+				C4C419976145CA17E8079D1F /* AdUnits.swift */,
+				75BA4EA4D7FAF6A682029576 /* BatteryEstimate.swift */,
+				C047DF69A92A9236A6E92528 /* Benchmarks.swift */,
+				66F56BA34A2ACB032654904A /* CameraInventory.swift */,
+				56009C69151B435359B5215E /* CompassReading.swift */,
+				8BEF16FDB58FE7487925CA5E /* CPUSampler.swift */,
+				054512C0B6A980C325DFD1B6 /* DeviceCatalog.swift */,
+				A46734A937C7D434113A9791 /* DeviceCheck.swift */,
+				6879F1ADC8725017AD574D18 /* DeviceSheet.swift */,
+				B3464C368B7E5AFB2AB48AFD /* FloatingMeter.swift */,
+				2E925718EEB69C220C1C4D9A /* LiveMonitor.swift */,
+				8A87CD5A382E6D0D22380359 /* MemoryInfo.swift */,
+				DFEF48D07C481967A7B0C34B /* Monetization.swift */,
+				7B165149E86920D61F4F219C /* MotionMonitor.swift */,
+				5E79304E17F2B0440D87CADA /* NetworkSampler.swift */,
+				D48437FCA5533F7629BB0188 /* PainelSheet.swift */,
+				571EBB8456CA5E387BD3AFE3 /* Percent.swift */,
+				D9D783F4B54539CE74353489 /* SensorSheet.swift */,
+				301D91E58C8C4C05F18113EF /* SheetModel.swift */,
+				9DA106FA946BC8A81422ACD2 /* SpeedTest.swift */,
+				6ABEEA8770203BCEF89286B2 /* SystemInfo.swift */,
+				4B738FED5EE6444037690A62 /* ToolBench.swift */,
+				319B348F5A03C1DB22539B40 /* WidgetSnapshot.swift */,
+			);
+			path = Monitoring;
+			sourceTree = "<group>";
+		};
+		F8F4EB7521D3684AE09DB47A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				554A1E29C8889969C7E4378C /* Info.plist */,
+				E649DF6FF441CCDA1BD26EA8 /* Sonda.entitlements */,
+				D6BC46A7E6B75CE1D13DBB11 /* SondaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47A5885B6E479FE2BE80EA39 /* IphoneInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8332EC3FDC30552BA00985E5 /* Build configuration list for PBXNativeTarget "IphoneInfo" */;
+			buildPhases = (
+				6210711FA04943E3B410688C /* Sources */,
+				3F695F82F776ACCCFB6C7FF1 /* Frameworks */,
+				DE6E28BFD91E68A4BC48866F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E9BC7C5051E3889E98C42F1 /* PBXTargetDependency */,
+			);
+			name = IphoneInfo;
+			packageProductDependencies = (
+				EADC78DC7815E321A52D3D6D /* GoogleMobileAds */,
+			);
+			productName = IphoneInfo;
+			productReference = 94BA8C6FBE34500F48B5BC7A /* IphoneInfo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C22AA6E47AEF01BD20E2FCE2 /* IphoneInfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308175D281A020740C604FEB /* Build configuration list for PBXNativeTarget "IphoneInfoTests" */;
+			buildPhases = (
+				508069F49530BAFEA027972E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48AC0EE3E2302A5B2EBB825E /* PBXTargetDependency */,
+			);
+			name = IphoneInfoTests;
+			packageProductDependencies = (
+			);
+			productName = IphoneInfoTests;
+			productReference = 526201328AF3F091E1ECC209 /* IphoneInfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F71CF564564B447B9F15AE12 /* IphoneInfoWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4127F6B2BD72E79B12C239F /* Build configuration list for PBXNativeTarget "IphoneInfoWidget" */;
+			buildPhases = (
+				4324A29BEFAA571D7DCDE926 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IphoneInfoWidget;
+			packageProductDependencies = (
+			);
+			productName = IphoneInfoWidget;
+			productReference = 0D6A8C6D0F34E57A4F416A62 /* IphoneInfoWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26EE35674613E50A28B2E5BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					47A5885B6E479FE2BE80EA39 = {
+						DevelopmentTeam = WRPL8T3887;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FBC8453E0B5D26004B91E8AE /* Build configuration list for PBXProject "IphoneInfo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 90D6C6DE81736154CD9925EC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A56D2CE67FE442DF66079C5E /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AD86944C5A8B2DBA1F4F79C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47A5885B6E479FE2BE80EA39 /* IphoneInfo */,
+				F71CF564564B447B9F15AE12 /* IphoneInfoWidget */,
+				C22AA6E47AEF01BD20E2FCE2 /* IphoneInfoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4324A29BEFAA571D7DCDE926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35903669E108F4A3D358A830 /* Percent.swift in Sources */,
+				CFE2D479A440D6658DC1B250 /* SondaWidget.swift in Sources */,
+				6121C8CB8627A91FDB2510A4 /* WidgetSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508069F49530BAFEA027972E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B629AC8728F3909346B147AC /* BatteryEstimateTests.swift in Sources */,
+				2650611FCF8B3090441B73E1 /* BenchmarksTests.swift in Sources */,
+				C465EA42E72074DAE4436FEC /* CameraInventoryTests.swift in Sources */,
+				69EE5D366A2DED026DF3BF6B /* CompassReadingTests.swift in Sources */,
+				A2C77203A8A0D57C0D13AB10 /* DeviceCatalogTests.swift in Sources */,
+				EC8CEBF990328B5879A4C448 /* DeviceCheckTests.swift in Sources */,
+				C7C655BA6C27F2D3A40BAF7D /* DeviceSheetTests.swift in Sources */,
+				31CC5C882187E71CEA31A1DF /* FloatingMeterTests.swift in Sources */,
+				79359DA24D44F9832744A4EF /* FormatTests.swift in Sources */,
+				25F186DAAADDB0780890AB1A /* MonetizationTests.swift in Sources */,
+				25912CFE0F337C8DFC81E030 /* PainelSheetTests.swift in Sources */,
+				01D07FC982483DA5C021B0C2 /* SensorSheetTests.swift in Sources */,
+				82BAD99FD0B8A7B992A1BAD4 /* SessionTrafficTests.swift in Sources */,
+				973C8F68CFB7771AF0F11BE9 /* SondaTestsSupport.swift in Sources */,
+				B495A98BAB7433B33554D278 /* SpeedTestTests.swift in Sources */,
+				8CF2AB5B11DF5E84B9411DE9 /* ToolBenchTests.swift in Sources */,
+				7069B255E04B9AF8311210D7 /* WidgetSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6210711FA04943E3B410688C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA950709F1D7AE21BBE798A /* AdBannerView.swift in Sources */,
+				33C66FB0102E10AFE86F3416 /* AdUnits.swift in Sources */,
+				EC25C7F59846634296E08FB1 /* BatteryDetailView.swift in Sources */,
+				4725EC55A658A715D4CF4A02 /* BatteryEstimate.swift in Sources */,
+				D1E43D92D4D9BF2A62EB16AC /* BenchmarkView.swift in Sources */,
+				888470AAF3A2A2F37894B924 /* Benchmarks.swift in Sources */,
+				9F01DFD670685BBE45DCA29A /* CPUSampler.swift in Sources */,
+				ECA3DD4047238618C4979EEC /* CameraInventory.swift in Sources */,
+				870ACE0D321F9D893811B50C /* CameraView.swift in Sources */,
+				CE703B10AC386AB66D9E39FC /* CompassReading.swift in Sources */,
+				CDC5801ACBD68C1464121021 /* CompassView.swift in Sources */,
+				500534DCFD0EA83123570606 /* Components.swift in Sources */,
+				E0CE6D550C99DCF5B1CBAE4F /* DashboardView.swift in Sources */,
+				9DB512E76BFFB9F216F8D784 /* DeviceCatalog.swift in Sources */,
+				F0A638281315F9DEA4AD1B5F /* DeviceCheck.swift in Sources */,
+				A148C6858AC10B7FE859D467 /* DeviceCheckView.swift in Sources */,
+				C381404C10BC21FC6C67404F /* DeviceSheet.swift in Sources */,
+				769075150316E4F31B4F7582 /* DeviceView.swift in Sources */,
+				6341DE036E5A012CF420BBEF /* FloatingMeter.swift in Sources */,
+				8F79F96985CA78AE74B91B79 /* FloatingMeterView.swift in Sources */,
+				A83AE82B91D9A3E0FECFFF50 /* Formatting.swift in Sources */,
+				158566F723A90F1861FD861A /* FrequencyProbe.c in Sources */,
+				CDB7307AFB37ABF77558886F /* LiveMonitor.swift in Sources */,
+				FEBD06B9F0DB1F9900D1C342 /* MemoryInfo.swift in Sources */,
+				ABA068F3ED64FB65B0A870BD /* Monetization.swift in Sources */,
+				E839AB01AAD34C75F722D8A2 /* MoreView.swift in Sources */,
+				86C56C9C02A097F6F8130CBE /* MotionMonitor.swift in Sources */,
+				AD08467D955F82B13FE01733 /* NetworkSampler.swift in Sources */,
+				E3709F63D2E08D6E77913760 /* NetworkView.swift in Sources */,
+				B36CC56E11686E27F4FEC9A8 /* PainelSheet.swift in Sources */,
+				81021C85F68434E2E5EE3ED0 /* Percent.swift in Sources */,
+				6CDAC1BF72B9D41608F71DCD /* SensorSheet.swift in Sources */,
+				C14AAF39348F46736CE13F2B /* SensorsView.swift in Sources */,
+				DB514156A3A6FE7BBE84D962 /* SheetModel.swift in Sources */,
+				7D55A63BEBE33F77ABC8E7E3 /* SondaApp.swift in Sources */,
+				47E37AE4DAC3921D9E2A5B75 /* SpeedTest.swift in Sources */,
+				7831D96DAC83D350C21A97C7 /* SpeedView.swift in Sources */,
+				AD89C766565E747D3C2B98AD /* SystemInfo.swift in Sources */,
+				7805B3A3AE2F5A012D0311DF /* ToolBench.swift in Sources */,
+				8229C4BB3C3A709569B77838 /* ToolsView.swift in Sources */,
+				2D320292F1AC4561B956D871 /* WidgetSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E9BC7C5051E3889E98C42F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F71CF564564B447B9F15AE12 /* IphoneInfoWidget */;
+			targetProxy = 16F0D7A5D6818AC6F4353089 /* PBXContainerItemProxy */;
+		};
+		48AC0EE3E2302A5B2EBB825E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47A5885B6E479FE2BE80EA39 /* IphoneInfo */;
+			targetProxy = 1DB799C600F378C0FA00A6EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CD70F78F345894176406CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IphoneInfo/App/Sonda.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRPL8T3887;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IphoneInfo/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Iphone Info";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "O Iphone Info usa a localização para mostrar o nome da rede Wi-Fi e a bússola.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "O Iphone Info usa o microfone para medir o nível de ruído em decibéis.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "O Iphone Info usa os sensores de movimento para mostrar acelerômetro, giroscópio e barômetro.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azvdo.iphoneinfo;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "IphoneInfo/Native/Sonda-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E8006D26B5239CD385DF149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7ED36E2B49C34FFAFB817C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C1CD7F89C855E6599A5F3857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IphoneInfo/App/Sonda.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRPL8T3887;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IphoneInfo/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Iphone Info";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "O Iphone Info usa a localização para mostrar o nome da rede Wi-Fi e a bússola.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "O Iphone Info usa o microfone para medir o nível de ruído em decibéis.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "O Iphone Info usa os sensores de movimento para mostrar acelerômetro, giroscópio e barômetro.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azvdo.iphoneinfo;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "IphoneInfo/Native/Sonda-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D13951CFF4E21C7BC32B651D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azvdo.iphoneinfoTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IphoneInfo.app/IphoneInfo";
+			};
+			name = Debug;
+		};
+		EE64DBCF2EE3C85EC1AAA196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/SondaWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azvdo.iphoneinfo.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA63A2A465496FD5E3AA691F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/SondaWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azvdo.iphoneinfo.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD4A3554AF498F8F88320E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azvdo.iphoneinfoTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IphoneInfo.app/IphoneInfo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		308175D281A020740C604FEB /* Build configuration list for PBXNativeTarget "IphoneInfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13951CFF4E21C7BC32B651D /* Debug */,
+				FD4A3554AF498F8F88320E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8332EC3FDC30552BA00985E5 /* Build configuration list for PBXNativeTarget "IphoneInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1CD7F89C855E6599A5F3857 /* Debug */,
+				3CD70F78F345894176406CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F4127F6B2BD72E79B12C239F /* Build configuration list for PBXNativeTarget "IphoneInfoWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63A2A465496FD5E3AA691F /* Debug */,
+				EE64DBCF2EE3C85EC1AAA196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FBC8453E0B5D26004B91E8AE /* Build configuration list for PBXProject "IphoneInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E8006D26B5239CD385DF149 /* Debug */,
+				7ED36E2B49C34FFAFB817C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A56D2CE67FE442DF66079C5E /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EADC78DC7815E321A52D3D6D /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A56D2CE67FE442DF66079C5E /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 26EE35674613E50A28B2E5BA /* Project object */;
+}
