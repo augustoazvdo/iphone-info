@@ -2,8 +2,8 @@ import XCTest
 @testable import IphoneInfo
 
 final class BenchmarksTests: XCTestCase {
-    func testBenchmarkScoresAreSondaNotGeekbench() {
-        XCTAssertEqual(Benchmarks.scoreLabel, "Pontuação Sonda")
+    func testBenchmarkScoresAreIphoneInfoNotGeekbench() {
+        XCTAssertEqual(Benchmarks.scoreLabel, "Pontuação Iphone Info")
         XCTAssertFalse(Benchmarks.scoreLabel.contains("Geekbench"))
         let score = Benchmarks.measureCPU()
         XCTAssertGreaterThan(score.integer, 0)

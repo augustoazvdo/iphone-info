@@ -1,4 +1,4 @@
-# Sonda Context
+# Iphone Info Context
 
 **Gathered:** 2026-11-09
 **Spec:** `.specs/features/sonda/spec.md`

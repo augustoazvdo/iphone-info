@@ -8,10 +8,10 @@
 - **Trade-off**: The app will not be recognized as CPU-x by name.
 - **Scope**: All features.
 - **Date**: 2026-11-09
-- **Status**: active
+- **Status**: superseded by AD-006 on 2026-11-14 (name only; the no-CPU-x-brand rule still holds)
 
 ### AD-002
-- **Decision**: Sonda shows ads and does not sell a Pro upgrade.
+- **Decision**: Iphone Info shows ads and does not sell a Pro upgrade.
 - **Reason**: The user chose "somente anuncios" on 2026-11-09.
 - **Trade-off**: Information that CPU-x locks behind Pro is free here. There is no purchase flow.
 - **Scope**: All features.
@@ -40,6 +40,14 @@
 - **Trade-off**: The wattage row is not a measurement from the battery controller.
 - **Scope**: Feature `sonda`, battery section.
 - **Date**: 2026-11-09
+- **Status**: active
+
+### AD-006
+- **Decision**: The product name is Iphone Info. The Xcode project is `IphoneInfo/IphoneInfo.xcodeproj`, the bundle id is `com.azvdo.iphoneinfo`, the GitHub repository is `augustoazvdo/iphone-info`, and the display name is "Iphone Info".
+- **Reason**: The user asked to rename the project and repository to Iphone Info on 2026-11-14.
+- **Trade-off**: Swift type names, file names, the `sonda_*` C symbols, and the `.specs/features/sonda` folder still say Sonda. The local folder `REA-CPUZ` keeps its name because the Cursor workspace depends on it. The bundle id change makes an old Sonda install a different app for iOS.
+- **Scope**: All features. Replaces the name in AD-001.
+- **Date**: 2026-11-14
 - **Status**: active
 
 ## Handoff

@@ -12,7 +12,7 @@ struct BannerPresentation: Equatable {
     }
 }
 
-/// Sonda earns from ads only (AD-002). No product is sold, so there is no purchase control.
+/// Iphone Info earns from ads only (AD-002). No product is sold, so there is no purchase control.
 enum Monetization {
     static let productIdentifiers: [String] = []
 

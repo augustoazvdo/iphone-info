@@ -2,7 +2,7 @@ import Foundation
 
 /// Scores from this app's own loops. They are not comparable to any third-party benchmark.
 enum Benchmarks {
-    static let scoreLabel = "Pontuação Sonda"
+    static let scoreLabel = "Pontuação Iphone Info"
     static let allocationFailureText = "Memória insuficiente"
     static let memoryBytes = 64 * 1024 * 1024
 

@@ -1,4 +1,4 @@
-# Sonda Tasks
+# Iphone Info Tasks
 
 ## Execution Protocol (MANDATORY -- do not skip)
 
@@ -12,8 +12,8 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 **Status**: Approved
 **Approved**: 2026-11-09 - user: "aprovado, depois configuro o git, por enquanto mantenha somente local o versionamento"
 
-**Build**: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
-**Run unit**: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+**Build**: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
+**Run unit**: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 ---
 
@@ -23,10 +23,10 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 | Code Layer | Required Test Type | Coverage Expectation | Location Pattern | Run Command |
 | --- | --- | --- | --- | --- |
-| Domain rule (`Monitoring/` pure types) | unit | All branches; 1:1 to the spec criteria the type owns; every listed edge case has a test | `Sonda/SondaTests/*Tests.swift` | `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests` |
-| SwiftUI view | none | Build gate. The view renders the type and does not recompute it. | `Sonda/Sonda/Views/*.swift` | build gate only |
-| Widget view | none | Build gate. Values come from `WidgetSnapshot`. | `Sonda/Widget/*.swift` | build gate only |
-| Project config | none | Build gate only | `Sonda/project.yml` | build gate only |
+| Domain rule (`Monitoring/` pure types) | unit | All branches; 1:1 to the spec criteria the type owns; every listed edge case has a test | `IphoneInfo/IphoneInfoTests/*Tests.swift` | `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests` |
+| SwiftUI view | none | Build gate. The view renders the type and does not recompute it. | `IphoneInfo/IphoneInfo/Views/*.swift` | build gate only |
+| Widget view | none | Build gate. Values come from `WidgetSnapshot`. | `IphoneInfo/Widget/*.swift` | build gate only |
+| Project config | none | Build gate only | `IphoneInfo/project.yml` | build gate only |
 
 ## Gate Check Commands
 
@@ -34,9 +34,9 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 | Gate Level | When to Use | Command |
 | --- | --- | --- |
-| Quick | After a domain task | `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests` |
-| Full | After a domain task that also needs the app to link | `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests` |
-| Build | After a view or config task | `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build` |
+| Quick | After a domain task | `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests` |
+| Full | After a domain task that also needs the app to link | `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests` |
+| Build | After a view or config task | `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build` |
 
 ---
 
@@ -93,18 +93,18 @@ T22 → T29
 
 ### T1: Add the unit test target
 
-**What**: Add an iOS unit-test bundle `SondaTests` that hosts on `Sonda` and can `@testable import Sonda`.
-**Where**: `Sonda/project.yml`
+**What**: Add an iOS unit-test bundle `IphoneInfoTests` that hosts on `IphoneInfo` and can `@testable import IphoneInfo`.
+**Where**: `IphoneInfo/project.yml`
 **Depends on**: None
-**Reuses**: The existing `Sonda` application target
+**Reuses**: The existing `IphoneInfo` application target
 **Requirement**: SONDA-03
 
 **Done when**:
 
-- [ ] `Sonda/project.yml` defines target `SondaTests` as `bundle.unit-test`, platform iOS, sources `SondaTests`, dependency `Sonda`
+- [ ] `IphoneInfo/project.yml` defines target `IphoneInfoTests` as `bundle.unit-test`, platform iOS, sources `IphoneInfoTests`, dependency `IphoneInfo`
 - [ ] `ENABLE_TESTABILITY` is YES on the app target
-- [ ] `xcodegen generate` recreates `Sonda/Sonda.xcodeproj`
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] `xcodegen generate` recreates `IphoneInfo/IphoneInfo.xcodeproj`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -115,7 +115,7 @@ T22 → T29
 ### T2: Estimate battery power
 
 **What**: Add `BatteryEstimate` with the watt, volt, and current rules, including monitoring off and an unknown state.
-**Where**: `Sonda/Sonda/Monitoring/BatteryEstimate.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/BatteryEstimate.swift`
 **Depends on**: T1
 **Reuses**: None
 **Requirement**: SONDA-03, SONDA-04, SONDA-05, SONDA-06, SONDA-07
@@ -128,8 +128,8 @@ T22 → T29
 - [ ] Unknown state does not apply the unplugged formula
 - [ ] Monitoring off sets charge text to `—` and does not produce `5.2`
 - [ ] A nil capacity sets capacity, watts, volts, and current to `Indisponível`
-- [ ] Tests live in `Sonda/SondaTests/BatteryEstimateTests.swift` under the method names in Checks C3, C4, C5, C6, C7, and C27
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Tests live in `IphoneInfo/IphoneInfoTests/BatteryEstimateTests.swift` under the method names in Checks C3, C4, C5, C6, C7, and C27
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -140,7 +140,7 @@ T22 → T29
 ### T3: Store catalog capacity
 
 **What**: Add `capacityMilliampHours` to every existing `DeviceSpec`, using the table in `design.md`.
-**Where**: `Sonda/Sonda/Monitoring/DeviceCatalog.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/DeviceCatalog.swift`
 **Depends on**: T2
 **Reuses**: `DeviceCatalog.spec(for:)`
 **Requirement**: SONDA-02
@@ -150,8 +150,8 @@ T22 → T29
 - [ ] `iPhone16,2` returns `4422`
 - [ ] `iPhone99,9` returns nil
 - [ ] The other identifiers in the design table return the listed mAh
-- [ ] Test method `testIPhone15ProMaxCapacity` is in `Sonda/SondaTests/DeviceCatalogTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test method `testIPhone15ProMaxCapacity` is in `IphoneInfo/IphoneInfoTests/DeviceCatalogTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -164,7 +164,7 @@ T22 → T29
 ### T4: Build the painel sheet
 
 **What**: Add `PainelSheet`, `CoreSelection`, `MonitorToggle`, and `SampleGate`.
-**Where**: `Sonda/Sonda/Monitoring/PainelSheet.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/PainelSheet.swift`
 **Depends on**: T3
 **Reuses**: `BatteryEstimate`, `MemorySnapshot`, `StorageSnapshot`
 **Requirement**: SONDA-01, SONDA-02, SONDA-11, SONDA-12
@@ -177,8 +177,8 @@ T22 → T29
 - [ ] Running title is `Pausar` and the next state is stopped. Stopped title is `Retomar` and the next state is running
 - [ ] Empty cores produce `0%` and an empty core list
 - [ ] `SampleGate.runs(active: false)` is false and `SampleGate.runs(active: true)` is true
-- [ ] Test methods for C1, C2, C11, C12, C28, and C29 are in `Sonda/SondaTests/PainelSheetTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test methods for C1, C2, C11, C12, C28, and C29 are in `IphoneInfo/IphoneInfoTests/PainelSheetTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -189,7 +189,7 @@ T22 → T29
 ### T5: Define the banner and block purchases
 
 **What**: Add `BannerPresentation` and `Monetization` with an empty product list.
-**Where**: `Sonda/Sonda/Monitoring/Monetization.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/Monetization.swift`
 **Depends on**: T4
 **Reuses**: None
 **Requirement**: SONDA-13, SONDA-14, SONDA-15
@@ -199,8 +199,8 @@ T22 → T29
 - [ ] The painel presentation has `regionVisible == true`
 - [ ] A failed load sets the message to `Anúncio indisponível`
 - [ ] `productIdentifiers` is empty and `purchaseControls` is empty
-- [ ] Test methods for C13, C14, and C15 are in `Sonda/SondaTests/MonetizationTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test methods for C13, C14, and C15 are in `IphoneInfo/IphoneInfoTests/MonetizationTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -211,7 +211,7 @@ T22 → T29
 ### T6: Link the ads SDK
 
 **What**: Add the Google Mobile Ads package and the public test app id. Do not use the CPU-x publisher id.
-**Where**: `Sonda/project.yml`
+**Where**: `IphoneInfo/project.yml`
 **Depends on**: T5
 **Reuses**: `Monetization`
 **Requirement**: SONDA-13
@@ -221,7 +221,7 @@ T22 → T29
 - [ ] `project.yml` depends on `https://github.com/googleads/swift-package-manager-google-mobile-ads` at the stable major that resolves
 - [ ] The generated Info.plist uses app id `ca-app-pub-3940256099942544~1458002511`
 - [ ] The banner unit constant in the app target is `ca-app-pub-3940256099942544/2934735716`
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -232,7 +232,7 @@ T22 → T29
 ### T7: Show the sheet and the banner
 
 **What**: Bind `DashboardView` to `PainelSheet` and one banner region.
-**Where**: `Sonda/Sonda/Views/DashboardView.swift`
+**Where**: `IphoneInfo/IphoneInfo/Views/DashboardView.swift`
 **Depends on**: T6
 **Reuses**: `MetricCard`, `CoreGlassButton`, `HistoryChart`
 **Requirement**: SONDA-01, SONDA-12, SONDA-13, SONDA-14, SONDA-15
@@ -245,7 +245,7 @@ T22 → T29
 - [ ] One banner region shows `BannerPresentation.message` when the load fails
 - [ ] The view has no purchase button and no watt formula of its own
 - [ ] `RootView` uses `SampleGate` when the scene phase changes
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -258,7 +258,7 @@ T22 → T29
 ### T8: Build the device sheet
 
 **What**: Add `DeviceSheet.make(system:)` for the SONDA-08 fields.
-**Where**: `Sonda/Sonda/Monitoring/DeviceSheet.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/DeviceSheet.swift`
 **Depends on**: T7
 **Reuses**: `SystemInfo`
 **Requirement**: SONDA-08
@@ -268,8 +268,8 @@ T22 → T29
 - [ ] A catalogued fixture includes marketing name, identifier, device name, chip, process, max clock, logical cores, performance cores, efficiency cores, both caches, RAM, GPU name, family, ray tracing `Sim` or `Não`, recommended memory, pixel size, scale, max frames per second, OS version, build, kernel, and uptime
 - [ ] A nil spec uses chip `Desconhecido` and omits process and max clock
 - [ ] A nil GPU row is `Metal indisponível`
-- [ ] Test method `testDeviceSheetListsHardware` is in `Sonda/SondaTests/DeviceSheetTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test method `testDeviceSheetListsHardware` is in `IphoneInfo/IphoneInfoTests/DeviceSheetTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -280,7 +280,7 @@ T22 → T29
 ### T9: Bind the device screen
 
 **What**: Render `DeviceSheet` from `DeviceView`.
-**Where**: `Sonda/Sonda/Views/DeviceView.swift`
+**Where**: `IphoneInfo/IphoneInfo/Views/DeviceView.swift`
 **Depends on**: T8
 **Reuses**: `ValueRow`, `GlassBackdrop`
 **Requirement**: SONDA-08
@@ -289,7 +289,7 @@ T22 → T29
 
 - [ ] The list rows come from `DeviceSheet.make(system:)`
 - [ ] The view does not format chip or cache values itself
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -300,7 +300,7 @@ T22 → T29
 ### T10: Build the sensor sheet
 
 **What**: Add `SensorSheet` for present axes and the absence sentence.
-**Where**: `Sonda/Sonda/Monitoring/SensorSheet.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/SensorSheet.swift`
 **Depends on**: T9
 **Reuses**: `Vector3`
 **Requirement**: SONDA-09, SONDA-10
@@ -309,8 +309,8 @@ T22 → T29
 
 - [ ] Present accelerometer, gyroscope, and magnetometer sections include X, Y, and Z, plus pitch, roll, yaw, pressure in kPa, and relative altitude in meters
 - [ ] An absent sensor section contains `Indisponível neste aparelho` and the other sections still have values
-- [ ] Test methods `testSensorsShowAxesWhenPresent` and `testAbsentSensorSaysIndisponivel` are in `Sonda/SondaTests/SensorSheetTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test methods `testSensorsShowAxesWhenPresent` and `testAbsentSensorSaysIndisponivel` are in `IphoneInfo/IphoneInfoTests/SensorSheetTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -321,7 +321,7 @@ T22 → T29
 ### T11: Bind the sensor screen
 
 **What**: Render `SensorSheet` from `SensorsView`.
-**Where**: `Sonda/Sonda/Views/SensorsView.swift`
+**Where**: `IphoneInfo/IphoneInfo/Views/SensorsView.swift`
 **Depends on**: T10
 **Reuses**: `MotionMonitor`
 **Requirement**: SONDA-09, SONDA-10
@@ -330,7 +330,7 @@ T22 → T29
 
 - [ ] Sections come from `SensorSheet`
 - [ ] The view does not invent a second absence string
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -343,7 +343,7 @@ T22 → T29
 ### T12: Split session traffic
 
 **What**: Count session bytes with `SessionTraffic` and add `SSIDLabel`.
-**Where**: `Sonda/Sonda/Monitoring/NetworkSampler.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/NetworkSampler.swift`
 **Depends on**: T11
 **Reuses**: `getifaddrs` counters already in the file
 **Requirement**: SONDA-16, SONDA-17
@@ -352,8 +352,8 @@ T22 → T29
 
 - [ ] `100` received bytes on `en0`, `50` on `pdp_ip0`, and `999` on `lo0` yield Wi-Fi `100`, cellular `50`, and ignore `lo0`
 - [ ] Denied location returns `Indisponível` and does not clear the totals
-- [ ] Test methods `testSessionTotalsSplitWifiAndCellular` and `testDeniedLocationHidesSsid` are in `Sonda/SondaTests/SessionTrafficTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test methods `testSessionTotalsSplitWifiAndCellular` and `testDeniedLocationHidesSsid` are in `IphoneInfo/IphoneInfoTests/SessionTrafficTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -364,7 +364,7 @@ T22 → T29
 ### T13: Add the network screen
 
 **What**: Show the four session totals and the SSID label.
-**Where**: `Sonda/Sonda/Views/NetworkView.swift`
+**Where**: `IphoneInfo/IphoneInfo/Views/NetworkView.swift`
 **Depends on**: T12
 **Reuses**: `SessionTraffic`, `SSIDLabel`, glass list background
 **Requirement**: SONDA-16, SONDA-17
@@ -374,7 +374,7 @@ T22 → T29
 - [ ] The screen shows Wi-Fi download, Wi-Fi upload, cellular download, and cellular upload for the process session
 - [ ] The SSID row uses `SSIDLabel`
 - [ ] A tab or navigation control opens this screen from the painel
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -385,7 +385,7 @@ T22 → T29
 ### T14: List capture devices
 
 **What**: Add `CameraInventory` for position, device type, and the empty sentence.
-**Where**: `Sonda/Sonda/Monitoring/CameraInventory.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/CameraInventory.swift`
 **Depends on**: T13
 **Reuses**: None
 **Requirement**: SONDA-18
@@ -394,8 +394,8 @@ T22 → T29
 
 - [ ] An empty input yields `Nenhuma câmera` and no device row
 - [ ] A non-empty input lists position and device type and does not contain `Nenhuma câmera`
-- [ ] Test method `testEmptyCameraListSaysNenhumaCamera` is in `Sonda/SondaTests/CameraInventoryTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test method `testEmptyCameraListSaysNenhumaCamera` is in `IphoneInfo/IphoneInfoTests/CameraInventoryTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -406,7 +406,7 @@ T22 → T29
 ### T15: Parse the speed test result
 
 **What**: Add `SpeedTest` for a timed byte count and the failure sentence.
-**Where**: `Sonda/Sonda/Monitoring/SpeedTest.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/SpeedTest.swift`
 **Depends on**: T14
 **Reuses**: None
 **Requirement**: SONDA-19
@@ -415,8 +415,8 @@ T22 → T29
 
 - [ ] `1000` bytes in `2` seconds is `500` bytes per second
 - [ ] A failed request is `Teste falhou` and has no success rate
-- [ ] Test method `testFailedSpeedTestIsNotZero` is in `Sonda/SondaTests/SpeedTestTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test method `testFailedSpeedTestIsNotZero` is in `IphoneInfo/IphoneInfoTests/SpeedTestTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -427,17 +427,17 @@ T22 → T29
 ### T16: Score the benchmarks
 
 **What**: Add integer and floating CPU scores and memory read, write, and copy rates.
-**Where**: `Sonda/Sonda/Monitoring/Benchmarks.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/Benchmarks.swift`
 **Depends on**: T15
 **Reuses**: None
 **Requirement**: SONDA-20, SONDA-21
 
 **Done when**:
 
-- [ ] Both score labels equal `Pontuação Sonda` and neither contains `Geekbench`
+- [ ] Both score labels equal `Pontuação Iphone Info` and neither contains `Geekbench`
 - [ ] Allocation failure returns `Memória insuficiente` and no megabytes-per-second success value
-- [ ] Test methods `testBenchmarkScoresAreSondaNotGeekbench` and `testMemoryAllocationFailure` are in `Sonda/SondaTests/BenchmarksTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test methods `testBenchmarkScoresAreIphoneInfoNotGeekbench` and `testMemoryAllocationFailure` are in `IphoneInfo/IphoneInfoTests/BenchmarksTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -448,7 +448,7 @@ T22 → T29
 ### T25: Show the camera inventory
 
 **What**: Render `CameraInventory` on a camera screen.
-**Where**: `Sonda/Sonda/Views/CameraView.swift`
+**Where**: `IphoneInfo/IphoneInfo/Views/CameraView.swift`
 **Depends on**: T14
 **Reuses**: `CameraInventory`
 **Requirement**: SONDA-18
@@ -458,7 +458,7 @@ T22 → T29
 - [ ] The screen lists each camera's position and device type
 - [ ] An empty inventory shows `Nenhuma câmera`
 - [ ] The view does not query `AVCaptureDevice` itself
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -469,7 +469,7 @@ T22 → T29
 ### T26: Show the speed test
 
 **What**: Render `SpeedTest` on a speed screen.
-**Where**: `Sonda/Sonda/Views/SpeedView.swift`
+**Where**: `IphoneInfo/IphoneInfo/Views/SpeedView.swift`
 **Depends on**: T15
 **Reuses**: `SpeedTest`
 **Requirement**: SONDA-19
@@ -478,7 +478,7 @@ T22 → T29
 
 - [ ] A success shows ping, download bytes per second, and upload bytes per second
 - [ ] A failure shows `Teste falhou` and no zero rate
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -489,16 +489,16 @@ T22 → T29
 ### T27: Show the benchmarks
 
 **What**: Render the CPU scores and the memory rates.
-**Where**: `Sonda/Sonda/Views/BenchmarkView.swift`
+**Where**: `IphoneInfo/IphoneInfo/Views/BenchmarkView.swift`
 **Depends on**: T16
 **Reuses**: `Benchmarks`
 **Requirement**: SONDA-20, SONDA-21
 
 **Done when**:
 
-- [ ] The screen shows the integer score, the floating score, and the `Pontuação Sonda` label
+- [ ] The screen shows the integer score, the floating score, and the `Pontuação Iphone Info` label
 - [ ] The memory section shows read, write, and copy, or `Memória insuficiente`
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -511,7 +511,7 @@ T22 → T29
 ### T17: Record the device check
 
 **What**: Add the six-item device check with pass, fail, and unavailable words.
-**Where**: `Sonda/Sonda/Monitoring/DeviceCheck.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/DeviceCheck.swift`
 **Depends on**: T16
 **Reuses**: None
 **Requirement**: SONDA-22
@@ -520,8 +520,8 @@ T22 → T29
 
 - [ ] The keys are `display`, `touch`, `camera`, `microphone`, `speaker`, and `volume`
 - [ ] Pass displays `Aprovado`, fail displays `Reprovado`, unavailable displays `Indisponível`
-- [ ] Test method `testDeviceCheckRecordsPassFailUnavailable` is in `Sonda/SondaTests/DeviceCheckTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test method `testDeviceCheckRecordsPassFailUnavailable` is in `IphoneInfo/IphoneInfoTests/DeviceCheckTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -532,7 +532,7 @@ T22 → T29
 ### T18: Format the widget snapshot
 
 **What**: Add `WidgetSnapshot` with CPU percent, battery percent, and the watts label.
-**Where**: `Sonda/Sonda/Monitoring/WidgetSnapshot.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/WidgetSnapshot.swift`
 **Depends on**: T17
 **Reuses**: `BatteryEstimate.wattsText`
 **Requirement**: SONDA-23
@@ -540,9 +540,9 @@ T22 → T29
 **Done when**:
 
 - [ ] A snapshot exposes the CPU percent, the battery percent, and a watts string that contains `estimativa`
-- [ ] Test method `testWidgetShowsCpuBatteryAndWatts` is in `Sonda/SondaTests/WidgetSnapshotTests.swift`
-- [ ] `LiveMonitor` writes the snapshot into app group `group.com.azvdo.sonda` when a sample completes
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test method `testWidgetShowsCpuBatteryAndWatts` is in `IphoneInfo/IphoneInfoTests/WidgetSnapshotTests.swift`
+- [ ] `LiveMonitor` writes the snapshot into app group `group.com.azvdo.iphoneinfo` when a sample completes
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -553,16 +553,16 @@ T22 → T29
 ### T19: Add the widget extension target
 
 **What**: Add a WidgetKit extension target that compiles `WidgetSnapshot` and the app-group entitlement.
-**Where**: `Sonda/project.yml`
+**Where**: `IphoneInfo/project.yml`
 **Depends on**: T18
 **Reuses**: `WidgetSnapshot`
 **Requirement**: SONDA-23
 
 **Done when**:
 
-- [ ] `project.yml` defines a WidgetKit extension with bundle id `com.azvdo.sonda.widget`
-- [ ] App and widget share entitlement `group.com.azvdo.sonda`
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] `project.yml` defines a WidgetKit extension with bundle id `com.azvdo.iphoneinfo.widget`
+- [ ] App and widget share entitlement `group.com.azvdo.iphoneinfo`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -573,7 +573,7 @@ T22 → T29
 ### T20: Show the widget
 
 **What**: Render CPU, battery, and watts from `WidgetSnapshot` in the widget view.
-**Where**: `Sonda/Widget/WidgetView.swift`
+**Where**: `IphoneInfo/Widget/WidgetView.swift`
 **Depends on**: T19
 **Reuses**: `WidgetSnapshot`
 **Requirement**: SONDA-23
@@ -582,7 +582,7 @@ T22 → T29
 
 - [ ] The widget view shows the three snapshot fields and no formula of its own
 - [ ] A missing snapshot shows `—` for each field
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -593,7 +593,7 @@ T22 → T29
 ### T28: Show the device check
 
 **What**: Render the six device-check rows.
-**Where**: `Sonda/Sonda/Views/DeviceCheckView.swift`
+**Where**: `IphoneInfo/IphoneInfo/Views/DeviceCheckView.swift`
 **Depends on**: T17
 **Reuses**: `DeviceCheck`
 **Requirement**: SONDA-22
@@ -602,7 +602,7 @@ T22 → T29
 
 - [ ] The screen records `Aprovado`, `Reprovado`, or `Indisponível` for display, touch, camera, microphone, speaker, and volume
 - [ ] The view does not invent a fourth word
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -615,7 +615,7 @@ T22 → T29
 ### T21: Format the floating meter
 
 **What**: Add the PiP overlay model with CPU percent and battery percent.
-**Where**: `Sonda/Sonda/Monitoring/FloatingMeter.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/FloatingMeter.swift`
 **Depends on**: T20
 **Reuses**: `PainelSheet` percent text
 **Requirement**: SONDA-24
@@ -623,9 +623,9 @@ T22 → T29
 **Done when**:
 
 - [ ] The model exposes CPU percent and battery percent
-- [ ] Test method `testFloatingMeterShowsCpuAndBattery` is in `Sonda/SondaTests/FloatingMeterTests.swift`
+- [ ] Test method `testFloatingMeterShowsCpuAndBattery` is in `IphoneInfo/IphoneInfoTests/FloatingMeterTests.swift`
 - [ ] Starting the meter presents those two strings in a Picture in Picture controller fed by a generated sample buffer
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -636,7 +636,7 @@ T22 → T29
 ### T22: Format the compass heading
 
 **What**: Add `CompassReading` for granted degrees and the denied sentence.
-**Where**: `Sonda/Sonda/Monitoring/CompassReading.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/CompassReading.swift`
 **Depends on**: T21
 **Reuses**: None
 **Requirement**: SONDA-25
@@ -645,8 +645,8 @@ T22 → T29
 
 - [ ] Denied permission returns `Localização desligada`
 - [ ] Granted heading `90` returns `90°`
-- [ ] Test method `testCompassDeniedSaysLocalizacaoDesligada` is in `Sonda/SondaTests/CompassReadingTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test method `testCompassDeniedSaysLocalizacaoDesligada` is in `IphoneInfo/IphoneInfoTests/CompassReadingTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -657,7 +657,7 @@ T22 → T29
 ### T23: Add the tool calculations
 
 **What**: Add regex, decibel, ruler, and tone calculations, plus the four tool names.
-**Where**: `Sonda/Sonda/Monitoring/ToolBench.swift`
+**Where**: `IphoneInfo/IphoneInfo/Monitoring/ToolBench.swift`
 **Depends on**: T22
 **Reuses**: None
 **Requirement**: SONDA-26
@@ -666,8 +666,8 @@ T22 → T29
 
 - [ ] Pattern `a` over text `banana` returns `3`
 - [ ] The offered names are `Decibel`, `Régua`, `Tom`, and `Regex`
-- [ ] Test method `testRegexMatchCountAndFourTools` is in `Sonda/SondaTests/ToolBenchTests.swift`
-- [ ] Gate check passes: `xcodebuild test -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build -only-testing:SondaTests`
+- [ ] Test method `testRegexMatchCountAndFourTools` is in `IphoneInfo/IphoneInfoTests/ToolBenchTests.swift`
+- [ ] Gate check passes: `xcodebuild test -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build -only-testing:IphoneInfoTests`
 
 **Tests**: unit
 **Gate**: quick
@@ -678,7 +678,7 @@ T22 → T29
 ### T24: Show the four tools
 
 **What**: Add the tools screen that offers the four `ToolBench` tools.
-**Where**: `Sonda/Sonda/Views/ToolsView.swift`
+**Where**: `IphoneInfo/IphoneInfo/Views/ToolsView.swift`
 **Depends on**: T23
 **Reuses**: `ToolBench`
 **Requirement**: SONDA-26
@@ -687,7 +687,7 @@ T22 → T29
 
 - [ ] The screen offers Decibel, Régua, Tom, and Regex
 - [ ] Each control updates from `ToolBench` rather than a private formula
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -698,7 +698,7 @@ T22 → T29
 ### T29: Show the compass
 
 **What**: Render `CompassReading` on a compass screen.
-**Where**: `Sonda/Sonda/Views/CompassView.swift`
+**Where**: `IphoneInfo/IphoneInfo/Views/CompassView.swift`
 **Depends on**: T22
 **Reuses**: `CompassReading`
 **Requirement**: SONDA-25
@@ -707,7 +707,7 @@ T22 → T29
 
 - [ ] Granted permission shows the heading degrees
 - [ ] Denied permission shows `Localização desligada`
-- [ ] Gate check passes: `xcodebuild -project Sonda/Sonda.xcodeproj -scheme Sonda -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath Sonda/build build`
+- [ ] Gate check passes: `xcodebuild -project IphoneInfo/IphoneInfo.xcodeproj -scheme IphoneInfo -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath IphoneInfo/build build`
 
 **Tests**: none
 **Gate**: build
@@ -774,8 +774,8 @@ Proof: run unit | testEmptyCameraListSaysNenhumaCamera passed
 **C19** - A failed speed test shows `Teste falhou` and has no success rate. `1000` bytes in `2` seconds is `500` bytes per second (SONDA-19, AC 1)
 Proof: run unit | testFailedSpeedTestIsNotZero passed
 
-**C20** - CPU scores are labeled `Pontuação Sonda` and the label does not contain `Geekbench` (SONDA-20, AC 1)
-Proof: run unit | testBenchmarkScoresAreSondaNotGeekbench passed
+**C20** - CPU scores are labeled `Pontuação Iphone Info` and the label does not contain `Geekbench` (SONDA-20, AC 1)
+Proof: run unit | testBenchmarkScoresAreIphoneInfoNotGeekbench passed
 
 **C21** - A failed memory allocation shows `Memória insuficiente` (SONDA-21, AC 1)
 Proof: run unit | testMemoryAllocationFailure passed
@@ -810,7 +810,7 @@ Proof: run unit | testBackgroundStopsAndActiveStarts passed
 
 **Settled mid-build:** T1–T29 implemented inline (no batch sub-agents). Test-host crash on first run was a simulator service issue; resolved by restarting the iPhone 17 simulator. Benchmarks memory guard corrected (no `free(malloc(0))`). Walk found "Zero KB" for a zero byte count and hyphenated battery labels; both fixed, and `FormatTests.testZeroBytesStayNumeric` covers the zero.
 **Dispatched:** none
-**Walked:** Battery card opens Bateria with Tensão, Potência, Corrente entrando, and Corrente em uso. On this simulator those four read Indisponível because iPhone18,3 is not in the catalog. Earlier walk: iPhone 17 simulator (iOS 27.2), app launched with no sign-in. Painel (tab Painel): live CPU, cores, "frequência estimada", memory, network, storage, glass core button selects N1, pause switches to play, Google test banner "Test mode". Battery reads "—" and "Indisponível" because this simulator reports no level and iPhone18,3 is not in the catalog. Dispositivo: model, chip "Desconhecido", cores, caches, GPU, RAM, screen, iOS 27.2, uptime. Sensores: "Indisponível neste aparelho" (no motion hardware). Mais opens Rede ("Sem conexão", cellular 0 bytes), Câmera ("Nenhuma câmera"), Velocidade ("Ainda não medido"), Benchmark ("Pontuação Sonda"), Checagem ("Não testado"), Bússola ("Aguardando…"), Medidor flutuante (CPU percent, battery "—", PiP toggle left off), Ferramentas (decibel, régua, 440 Hz, regex "a"/"banana" = 3). Widget home-screen add, PiP start, microphone, and tone were not exercised. SSID needs the Wi-Fi entitlement on a signed device.
+**Walked:** Battery card opens Bateria with Tensão, Potência, Corrente entrando, and Corrente em uso. On this simulator those four read Indisponível because iPhone18,3 is not in the catalog. Earlier walk: iPhone 17 simulator (iOS 27.2), app launched with no sign-in. Painel (tab Painel): live CPU, cores, "frequência estimada", memory, network, storage, glass core button selects N1, pause switches to play, Google test banner "Test mode". Battery reads "—" and "Indisponível" because this simulator reports no level and iPhone18,3 is not in the catalog. Dispositivo: model, chip "Desconhecido", cores, caches, GPU, RAM, screen, iOS 27.2, uptime. Sensores: "Indisponível neste aparelho" (no motion hardware). Mais opens Rede ("Sem conexão", cellular 0 bytes), Câmera ("Nenhuma câmera"), Velocidade ("Ainda não medido"), Benchmark ("Pontuação Iphone Info"), Checagem ("Não testado"), Bússola ("Aguardando…"), Medidor flutuante (CPU percent, battery "—", PiP toggle left off), Ferramentas (decibel, régua, 440 Hz, regex "a"/"banana" = 3). Widget home-screen add, PiP start, microphone, and tone were not exercised. SSID needs the Wi-Fi entitlement on a signed device.
 
 ---
 

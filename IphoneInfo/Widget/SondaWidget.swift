@@ -54,7 +54,7 @@ struct SondaWidget: Widget {
         StaticConfiguration(kind: kind, provider: SondaProvider()) { entry in
             SondaWidgetView(entry: entry)
         }
-        .configurationDisplayName("Sonda")
+        .configurationDisplayName("Iphone Info")
         .description("CPU, bateria e potência estimada.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }

@@ -1,11 +1,11 @@
-# Sonda Specification
+# Iphone Info Specification
 
 **Approved**: 2026-11-09 - user: "aprovado"
 **Battery screen approved**: 2026-11-09 - user: "aprovado"
 
 ## Problem Statement
 
-CPU-x shows a full hardware sheet for an iPhone: processor, memory, storage, battery power, display, system, network, and sensors. The App Store binary is FairPlay-encrypted, so Sonda cannot copy its code. Sonda is a clean-room app that shows the same classes of information with public iOS APIs, a device catalog, and labeled estimates where the system does not expose a live value.
+CPU-x shows a full hardware sheet for an iPhone: processor, memory, storage, battery power, display, system, network, and sensors. The App Store binary is FairPlay-encrypted, so Iphone Info cannot copy its code. Iphone Info is a clean-room app that shows the same classes of information with public iOS APIs, a device catalog, and labeled estimates where the system does not expose a live value.
 
 ## Goals
 
@@ -21,7 +21,7 @@ CPU-x shows a full hardware sheet for an iPhone: processor, memory, storage, bat
 | Pro purchase, StoreKit, rewarded-video unlock | AD-002. Ads only. |
 | FairPlay decryption or shipping CPU-x code | The executable is encrypted. |
 | Legacy Today extension | Apple removed that extension point in iOS 18. |
-| Copying `Battery.plist` or `rank.plist` from the IPA | Those files are the other app's data. Sonda keeps its own catalog. |
+| Copying `Battery.plist` or `rank.plist` from the IPA | Those files are the other app's data. Iphone Info keeps its own catalog. |
 
 ---
 
@@ -29,7 +29,7 @@ CPU-x shows a full hardware sheet for an iPhone: processor, memory, storage, bat
 
 | Assumption / decision | Chosen default | Rationale | Confirmed? |
 | --- | --- | --- | --- |
-| Product name Sonda | Sonda | AD-001, user: "Manter o nome Sonda" | y |
+| Product name Iphone Info | Iphone Info | AD-006, user, 2026-11-14 (replaces AD-001) | y |
 | Ads, no purchase | One banner, no Pro | AD-002, user: "somente anuncios" | y |
 | Delivery | Spec now, build P1 then later phases | AD-003, user: "Spec completo, implementar em fases" | y |
 | IPA in git | Track `CPU-x.ipa`, ignore `extracted/` and `build/` | AD-004, user: "Quero o IPA versionado também" | y |
@@ -162,7 +162,7 @@ CPU-x shows a full hardware sheet for an iPhone: processor, memory, storage, bat
 
 ## Differences from the source
 
-No binding capture. CPU-x is a reference for which facts exist, not a layout source. Sonda uses its own name and glass controls (AD-001).
+No binding capture. CPU-x is a reference for which facts exist, not a layout source. Iphone Info uses its own name and glass controls (AD-001).
 
 ## Sources
 

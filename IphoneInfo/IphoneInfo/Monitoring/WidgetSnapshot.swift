@@ -2,7 +2,7 @@ import Foundation
 
 /// What the home-screen widget shows. The app writes it into the shared app group after each sample.
 struct WidgetSnapshot: Codable, Equatable {
-    static let appGroup = "group.com.azvdo.sonda"
+    static let appGroup = "group.com.azvdo.iphoneinfo"
     static let storageKey = "widgetSnapshot"
 
     let cpuPercent: String
