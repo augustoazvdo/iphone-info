@@ -1,0 +1,11 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# Unpacked App Store payload. Regenerated with unzip from CPU-x.ipa.
+extracted/
+
+# OS
+.DS_Store

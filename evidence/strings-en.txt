@@ -1,0 +1,1275 @@
+Device Check Watch To Unlock = Watch video · temporary unlock
+Sysfont Title = System Fonts
+Device Check Guide Snapshot Detail = Passing means the item behaved normally during this run. It cannot rule out intermittent faults, damage that appears only under load, or a problem that occurs after the report is generated.
+Device Check Guide Public API Title = Public iOS data only
+LED Marquee Add Text = Add Text
+Device Check Shake Once = One shake detected · shake once more
+Theme Mode = Theme
+Regex Expression Section = EXPRESSION
+Cell Temporary Pro = Temporary Pro
+Performance Last Test = Last Test
+Weidgt = Widget
+LED Marquee Mirror = Mirror
+Screen Refresh Rate = Frame Rate
+Traffic data carry
+Device Check Barometer = Barometer
+Performance Test Duration = Test Duration
+Regex Template URL = HTTP or HTTPS URL
+Compass lati %@ = Latitude: %@
+Performance Processor Detail = Cores · Frequency · Utilization
+GPS True Heading = True Heading
+Pro Extend Ad Button = Watch Video to Extend
+LED Marquee Default Text = Welcome
+Wi-Fi Baudrate = Baud Rate via Wi-Fi
+EP Seg Text = Text
+OS Multitasking = Multitasking
+Front Camera = Front
+Mem Wired = Wired
+Your blue-green perception boundary is approximately:
+Regex Preview Accessibility = Replacement result preview
+Mem Total = Capacity
+Device Check Not Tested = Not tested
+Report Export Pro Message = Creating and exporting device reports requires purchased permanent Pro.
+Compass Max Altitude Title = YOUR RECORD
+Regex Error Pattern Too Long = The expression is too long. The limit is 4,096 characters.
+Performance Core Activity = CORE ACTIVITY
+Merge Flow settings? = Merge Flow Settings?
+Device Check Buttons = Physical buttons
+Device Type = Model
+Memory Benchmark Result = MEMORY TEST RESULTS
+Regex Template URL Detail = Find web links in plain text
+• Pure Green: ~120°
+Storage Type
+BT Smart = Bluetooth Smart
+Device Check Passed = Passed
+Cellular Flow = Cellular Traffic
+Emptypaste Title = Pasteboard
+Net wwan flow = Cellular Traffic
+LED Marquee Background Solid = Solid
+Efficiency Core = E-Core
+GetProHours = Congrats on getting %d hours of Pro use!
+Screen Size = Screen Size (Diagonal)
+Performance Total Score = Composite Index
+Regex Clear Confirm = Clear the expression, test text, replacement, and current results?
+Regex Error Invalid Replacement = The replacement template contains an invalid group reference or escape.
+Regex Flag Multiline = Multiline anchors
+Regex Results = RESULTS
+Select Theme
+Settings
+Speed Send = Upload Speed
+LED Marquee Left = Left
+Location permission is required
+Regex Test Text = TEST TEXT
+BT Controller = Controller
+Clear History
+Device Check Brightness Hint = Move the slider through a clearly dim and bright level, and confirm that the screen responds smoothly.
+Donate level 1 = Coffee
+Reset
+Altimeter Rising = Rising
+Device Check Guide Sampled Detail = Waits for a fresh motion or environmental sensor sample. A timeout can mean the sensor is unavailable, temporarily inactive, or not exposed on this model; it does not by itself prove a hardware fault.
+GPS Pressure: = Pressure:
+Start Cleaning
+IP LAN = LAN IP
+millisecond = ms
+About
+LED Marquee No Recent Text = No Recent Text
+ANW section f1 = 
+Battery Last Charge = Last Charge
+LED Marquee Background Custom = Custom Color
+CPU Test = CPU
+Performance Core = P-Core
+Storage All Capacities = All Capacities
+Data used, e.g: 3.5GB
+GPS Longitude = Longitude
+Compass Mode Altimeter = Altitude & pressure
+Regex Replace Summary Format = %lu replacements · %lu characters
+myblue current hue = Current Hue:
+Metal Threadgroup Memory = Threadgroup Memory
+Device Check Guide Temporary Detail = A recently launched app, interrupted test, incoming call, audio route change, or sensor startup delay may produce a one-time incomplete result. Repeat the affected item after conditions stabilize.
+Again Btn = Restart
+Device Check Pro Title = Unlock professional device check
+Device Check Guide Report Detail = Generate a report after completing interactive tests. It records the device, system build, method, time, result, and evidence so repeated behavior can be compared clearly.
+Max Download
+Buy Pro Error, Try Again = Purchase failed. Please try again in a moment.
+Continuous = Continuous focus
+Device Check Guide Network Title = Network configuration
+NFC
+Storage capacity carry
+Test History
+%.1f sec
+Pro Upgrade Permanent Direct = Upgrade to Lifetime Pro
+Regex Execution Detail Format = %.2f ms · %lu UTF-16 characters
+Translate
+Metal Argument Buffers = Argument Buffers
+Current screen FPS
+yyyy年MM月dd日 = MM-dd-yyyy
+Wi-Fi Recv = Data Downloaded via Wi-Fi
+Screen Pixel Density = Pixel Density
+Buy Pro Loading Click = Processing, please stand by
+Device Check Guide Limitations Section = KNOWN LIMITATIONS
+Device Check Guide Passed Available = Passed / Available
+Altimeter Pressure = Pressure
+Device motion sensor is not available
+Spectrum Palette = Spectrum Colors
+Device Title = Device
+LED Marquee Recent Text = Recent Text
+Device Check Components Section = INTERACTIVE TESTS
+Device Check Touch Failed Detail Format = User reported an unresponsive area · %ld%% coverage · %ld simultaneous touches observed
+Device Check Sample Timeout = No live sample received; check motion permission and try again
+Device Check Microphone Playback Title = Verify the recording
+Device Check Thermal Nominal Detail = Normal means iOS is not reporting meaningful thermal pressure at this moment.
+Altimeter Stable = Stable
+osuptime %@ = Boot time: %@
+Device Check Microphone = Microphone
+Generate Device Summary
+Battery
+Other
+IP WAN = WAN IP
+Camera FPS = FPS
+Report Source = Report source
+Clear
+Device Check Method Interactive = Interactive / user confirmed
+Camera Zoom = Zoom
+Device Check Microphone Start Failed = Unable to start microphone sampling
+GetPro Restore Btn = Restore Purchase
+Device Check Export Partial = Generate incomplete report
+Regex Flag Dot All = Dot matches newlines
+Show widget refresh button = Show refresh button
+Device Check Report Generated Format = Generated: %@
+Device Check Display Intro Summary = Six full-screen colors help reveal pixel defects and uneven areas.
+Rgx match = Match
+Screenruler Title = Ruler
+Screen Color = Color Accuracy Test
+LED Marquee Playback Speed = Playback speed
+YES
+Clearing Cache ... = Clearing Cache...
+Battery CFail = Check manually in Settings - Battery
+Compass Title = Compass
+Device Check Export = Generate report
+Device Check SIM Missing = No active SIM detected
+Device Check Display Failed Evidence = User reported a visible display issue
+Performance Available Memory = Available Memory
+Current screen Hz
+server error msg = The current test node is not available, please retry in a different node
+Compass Magnetic North = Magnetic north
+Vibe Off
+Acceleration
+Failed to retrieve magnetometer data
+Device Check Brightness Passed Format = User confirmed smooth brightness response · tested %ld%% to %ld%%
+Today ext select tip = Select Widget Style
+Floating Style Thermal Load Detail = Thermal, CPU & memory
+Regex Actions = Regular Expression Actions
+Floating Current Load = Current load
+LaunchWdgTipMsg = If the widget is lost or displayed abnormally after the App update, you can usually restore it by restarting your phone.
+Regex Error Live Limit = Live matching supports up to 100,000 characters. Tap Run for larger text.
+LED Marquee Background Hearts = Hearts
+Regex Template UUID = UUID
+Device Check Awaiting = Awaiting verification
+BAT
+Net cur speed = Current Speed
+Pro Entitlement Checking = Checking Pro status...
+Rate Us = Rate us on the App Store
+Compass Waiting Heading = Acquiring heading…
+Device Model = Device String
+Clear Cache
+Regex Live Paused = Live matching is paused. Tap Run to evaluate.
+Performance Benchmark Interrupted = Test interrupted; not saved. Showing the previous result.
+GPS Altitude: = Altitude:
+Green
+Device Check Camera Confirm = Did front/rear camera preview, focus, and switching work normally?
+Device Check Guide = Detection guide
+Pro Feature No Ads = Ad-free use
+Supports
+PING
+GetPro Buy Btn = Purchase (%@)
+Old Widget Removed Message = Apple removed legacy Today View extensions in iOS 18. This is a system-wide change, so no app can add this type of widget to Notification Center anymore, and the app cannot restore it. You can still view its previous settings, or use Home & Lock Screen Widgets instead.
+High
+Compass Altimeter Title = ALTITUDE
+Device Summary Report Note = This report is a point-in-time device summary. Runtime values may change after generation.
+USB-C
+Wi-Fi Send = Data Uploaded via Wi-Fi
+Network Title = Network
+Device Check Haptics = Haptics and vibration
+OS Operating System = Operating System
+LED Marquee Text Larger = Increase Text Size
+Regex Match Count Format = %lu Matches
+Regex Ref Lookbehind = Positive and negative lookbehind
+Device Check CPU Detail = This shows static processor information. E/P core counts do not change with the current workload.
+Auto reset Flow Peroid = Auto-reset period
+Click on the right side to refresh = Refresh on right area
+OS Version = Version
+Speedtest record empty title = No history
+Compass True North = True north
+Translate section = They help us translate
+Device Check Partial Report Message Format = Only %ld of %ld available checks are complete. The generated report will be clearly marked as incomplete.
+Opsystem Title = Operating System
+Buy Pro Buyed = Purchased
+Daily (day card)
+Light Palette = Light Colors
+Device Check Internet Passed Format = DNS, TLS, and HTTPS completed · %ld ms · HTTP %ld
+Floating Style Battery Detail = Level, status & runtime
+LED Marquee Slower = Slower
+Acceleration Z Axis = Z Axis
+Regex Ref Lookahead = Positive and negative lookahead
+Reset Cellular Flow
+RgxPh orig = Enter the text to be matched here
+OS Update = Last Reboot
+ruler-inch = %.2f inch
+tips = Tips
+Performance Floating Throughput = Floating-point Throughput
+LED Marquee Empty Title = Enter a Message
+Device Check Guide Version Title = Model and iOS differences
+Wi-Fi Details = Wi-Fi
+Device Check Proximity Passed = A live proximity state change was detected
+Device Check Thermal Evidence Nominal = Normal · no significant thermal pressure
+Rotation Pitch = Pitch
+SSD
+Gravitational
+Do not reset = Not reset
+Compass W = W
+Wi-Fi Flow = Total Wi-Fi Traffic
+System Settings
+Device Check Verified = Verified
+Regex Share Case = Share Test Case
+Cancel
+Cellular Carrier Name = Carrier
+Device Check System Footer = Shows current device, processor, memory, storage, thermal, and battery data. Open an item for its key values and meaning.
+Device Check Microphone Hint = Speak near the microphone for four seconds. The test verifies that a live audio signal is received.
+RgxPh result = Replacement result
+Device Check Report Device Format = Device: %@ (%@)
+Device Check Cellular = Cellular and SIM
+Regex Template Hex Color = Hex Color
+Compass long %@ = Longitude: %@
+Merge settings tips = After merging, Wi-Fi reset cycles and limits will be deactivated, and the automatic reset timing will rely entirely on the Cellular configuration.
+Device Check Microphone Playback Hint = Confirm that your voice is audible and clear. This verifies the complete capture and playback path.
+Maximum data unit
+Device Check Radio Off = Not active or permission unavailable
+TrueDepth
+Pro Free Subtitle = One purchase, all features for life
+Device Check Last Format = Last check: %@
+%d m = %d minutes
+Show Ad Enter = Enter after advertising (FREE)
+Get Pro
+Weiget backgroud blur = Blur Effect
+Stop Cleaning = Stop
+Drain Mode
+Camera Title = Camera
+Device Check Haptics Passed = User confirmed two distinct haptic pulses
+Device Check Guide Repeat Title = Repeat abnormal items
+Device Check Display Tap Next = Tap anywhere for the next color
+Reset Separately
+Memory Benchmark Detail = Read · Write · Copy · Latency
+UPLOAD
+Metal Information
+SpeakerClean Tips = Tips: Please turn the volume to maximum, and keep the speaker facing down for the best effect.
+Device Check Issues Format = %ld issues
+MEM
+Device Check Volume Timeout = No system output-level change was detected
+Compass SE = SE
+IP Netmask = Subnet Mask
+LED Marquee Background = Background
+BatteryStateFull = Full
+Depth clearing.... = Depth optimizing memory...
+Device Check Touch Hint = Trace the entire grid and use at least two fingers together
+Battery Dianniu = Actual Current
+Camera Resolution = Resolution
+Device Check Begin = Begin
+Device Check Guide Subjective Title = Some checks require judgment
+Device Check Guide Load Title = Current load and temperature
+OS Build Number = Build
+Output Receiver = Receiver
+myblue hud range = Search Range:
+Device Check Display Start = Start Display Test
+Device Check Filter Pending Issues = Needs action
+Reference Hue (HSL):
+Device Check Magnetometer = Magnetometer
+Compass Barometer Unavailable = Barometer unavailable · Altitude from GPS
+number of clipboard changes: %@ = Number of pasteboard changes: %@
+Device Check Touch Passed Format = %ld%% of the touch grid responded
+Device Check Proximity Unsupported = Proximity monitoring is not available
+GPS location failed. Please check your location permissions.
+Dark System = System Black
+Retest
+Floating Style Device Dashboard = Device Dashboard
+mmddhhmmFmt = MM/dd HH:mm
+Device Check Cameras = Cameras
+Failed to retrieve location data
+Motion Confidence = Accuracy
+Potential EDR headroom
+Floating Style CPU Cores = CPU Cores
+GPS Distance: = Distance:
+Supported
+Device Check Report Column Method = Method
+Report Source Link = Source link
+%@mm
+LED Marquee Start = Start Full Screen
+Auto reset Cellular Peroid = Auto Reset Cellular Period
+OS Compatibility = Compatibility
+Mem Pressure = Pressure
+loading... = Loading...
+Device Check CPU Evidence Format = %@ · %lu cores · %.0f%% current load
+Device Check Guide Radio Title = Radio testing is restricted
+LED Marquee Background Sunset = Sunset
+Regex Template IPv4 = IPv4 Address
+Device Check Biometrics = Biometrics
+Device Check Guide Radio Detail = A general iOS app cannot freely transmit test traffic through every cellular, Bluetooth, NFC, or ultra-wideband path. Availability may be reported without full end-to-end radio verification.
+Device Check Report App Format = App: CPU-x %@ · Protocol %@
+Compass Heading Accuracy Format = %@ · Accuracy ±%.0f°
+Reset App Font
+Device Check Hardware Unsupported = Not available on this device
+Landscape
+Multi-Core
+Regex Reference Replacement = REPLACEMENT TEMPLATES
+Color Space
+Device Check Method Sampled = Live sample
+Used
+Regex Ref Lazy = Prefer the shortest possible match
+Walking
+Compass Mode Speed = Speed & distance
+Wi-Fi SSID = SSID
+Want to save edits to the clipboard? = Want to save edits to the pasteboard?
+Device Check Thermal Evidence Pressure = thermal pressure detected
+Device Check Location = Location and compass
+Daily details
+Device Check Display Confirm = Were colors uniform with no dead pixels, bright spots, or abnormal lines?
+Accelerometer is not available
+Display Title = Display
+Widget Bg Theme = Widget Background
+ICP
+select server title = Choose a server
+Unused accumulated to next peroid = Unused add to next period
+Device Summary
+OPENGL Vendor = Vendor
+Device Check Thermal Nominal = Nominal
+Read clipboard = Read pasteboard
+Magnetic Field
+Regex Ready Detail = Enter an expression and test text to begin.
+Wi-Fi Flow Max = Wi-Fi Period Limit
+Unfolded
+Device Check Retry = Try again
+Device Check SIM Present = SIM detected
+Pro Temp Active Days Format = Trial Active · Expires in ~%ld day(s)
+Wwan Baudrate = Baud Rate via Cellular
+Compass Tip Speed = Tap speed to change units · Tap distance to switch total/trip
+Regex Ref Word = Word / non-word character
+Device Check Works = Works normally
+%d d %d h %d m
+Reset Wi-Fi Flow Success
+Compass Reset Trip = Reset trip distance
+Device Check Biometric Prompt Format = Waiting for %@ authentication...
+Device Check Thermal Critical = Critical
+LED Marquee Motion = Motion
+Performance Floating Score = Floating-point Score
+Regex Invalid = Expression Error
+Pro Buy Now Format = Upgrade to Lifetime Pro · %@
+Device Check Verify Now = Verify now
+Device Check Needs Setup Title Format = %ld tests need setup
+Wi-Fi BSSID = BSSID
+Device Check Guide Setup Detail = The test could not run because a permission, system setting, route, or prerequisite is unavailable. Correct the setting and run the item again.
+Search best server... = Looking for optimal server...
+Regex Pattern = Regular Expression
+Device Summary All Categories = All categories
+LED Marquee Background Green = Green
+Device Check Report Column Date = Checked at
+DOWNLOAD
+Running
+Performance Memory Detail = Capacity · Pressure · Allocation
+Compass NE = NE
+Input BatHealth placeholder = Maximum capacity, such as: 95%
+LED Marquee Still = Still
+Device Check Guide Results Section = RESULT MEANINGS
+Floating Style Resources = Resources
+%ld items
+Don't Remind Again
+Connector
+Rgx replace = Replace
+Compass altitu %@ = Elevation: %@
+Floating Picture in Picture Unavailable Message = Picture in Picture could not start. Make sure it is enabled in Settings, then try again.
+Memory Information = Info
+Metal Device
+CPU Type = Model
+Device Check Report Simulator System Format = System: %@ · Simulator
+Camera MaxVR = Max Video Resolution
+Clear All
+Device Check Restored Inactive = Previously not active; run again to refresh current state
+Device Check Volume Hint = Press either volume button once within eight seconds. The test verifies a real system output-level change.
+Mem Compressed = Compressed
+Device Check Guide Accessories Detail = A thick case, screen protector, magnetic mount, cable, headset, dock, or Bluetooth audio route can cover sensors or redirect sound and charging paths.
+Failed to retrieve accelerometer data
+Start Floating = Start
+Tips OK Button = OK
+Device Check Memory Detail = Higher pressure means the system is using more memory management, such as reclaiming or compressing data.
+LED Marquee Pro Message = Permanent Pro unlocks fonts, text size, colors, and animated backgrounds.
+OS Kern Type = Kern Type
+Memory Properties = Properties
+GPS Speed = Speed
+Device Check Proximity Hint = Cover and uncover the top of the screen within eight seconds
+Device Check Display Manual Note = This is a visual check. The app does not automatically identify defective pixels.
+Mem Tool First = Free up
+Output Headphones = Headphones
+Battery Type = Technology
+Spectrum
+Device Check Snapshot Note = Non-destructive diagnostics using public system APIs
+Device Check Export All Formats = Export all formats
+LED Marquee Direction = Direction
+Battery Charge = Remaining Capacity
+Blue
+Lightning
+Device Check Guide Attention Detail = The result is usable but unusual, incomplete, or affected by current conditions. Review the details and repeat the check before treating it as a fault.
+Do you think this color is closer?
+GetPro Title = Purchase Pro Edition
+LED Marquee Background Spectrum = Spectrum
+Device Check No SIM = Not detected
+CPU Total = Total
+Regex Template Email Detail = Common address format with practical domain checks
+JITTER
+Metal GPU Family = GPU Family
+Storage Information = Storage
+Rgx result head = Total of %d results:
+Cellular Baseband = Baseband
+Clipboard not read yet = Pasteboard not read yet
+Buy Pro Buying = Purchase in Progress
+Next: 
+Memory Sequential Read = Sequential Read
+LED Marquee Faster = Faster
+Auto
+CPU Instruction Set = Instruction Set
+Device Check Guide Environment Title = Test environment
+Device Check Thermal Serious = Serious
+Device Check Filter Empty Action = Show all checks
+Regex Error Output Too Large = The replacement result exceeds the 5 MB preview limit.
+Device Check Guide Passed Detail = The check completed normally or the capability was detected at the recorded time. This is shown in green.
+Support Watch Video = Watch Ad
+Device Check Torch Unsupported = No controllable flashlight is available
+Raw MF X Axis = X Axis
+Regex Template Han = Han Characters
+Mem Design Total = Design Capacity
+Location Services
+Device Check Shake Hint = Hold the device securely, then shake it twice within eight seconds. The test requires two distinct acceleration peaks.
+Device Check Torch Busy = The flashlight is currently unavailable
+Performance Testing = Testing…
+Device Check Shake Timeout = Two distinct shake movements were not detected
+Regex Reference Flags = OPTIONS
+Device Check Filter Empty = No items need action
+Storage Available = Available
+Device Check Guide Recommendations Section = RECOMMENDED USE
+Camera
+Tips Title = Tips
+Wide 1.0x
+Overview
+Mem PageIns = PageIns
+Regex Live = Live
+Performance Test Threads = Test Threads
+ThermalState serious = Serious
+Donate us section = If you like us and are willing to fund our long-term development, you can reward our programmers. 😀
+Device Check Cellular Capable = Cellular capable
+Device Check Camera Passed Format = Live frames received from %ld of %ld physical cameras; image and focus confirmed
+LED Marquee Font Bold = Bold
+Screen HR = Horizontal Resolution
+Medium
+Copied to clipboard = Copy to pasteboard
+Pro Status Checking = Checking
+Pause sensor sampling
+Need Pro Title = Requires Pro Edition
+cancel = Cancel
+Device Check Biometric = Biometric authentication
+GetPro Cancel Btn = Not Now
+Input BatCap msg = If you have replaced the battery, you can enter the current battery capacity into the lower area to better assess the battery.
+First judgment (%@): %d°
+Physical SIM Card Slot
+Input BatHealth msg = Go to System "Settings - Battery - Battery Health" to see the maximum battery capacity and enter it in the lower area to better evaluate the battery.
+Device Check Thermal Pressure Detail = This state means iOS is applying thermal pressure management. Let the device cool and check again.
+LED Marquee Content = Text
+Device Check Data Source = Data source: iOS system interfaces
+Device Check Collecting = Collecting current data...
+Pro Feature Exclusive = Unlimited use
+Device Check Guide Accessories Title = Cases and accessories
+Device Check Report Disclaimer = Scope: This non-destructive snapshot uses public iOS APIs, DeviceInfo data, live sensor samples, and clearly labeled user confirmations. A pass means the check completed normally at the stated time; it is not an Apple service diagnostic and cannot rule out intermittent or internal hardware faults.
+Compass Tip Compass = Tap compass to lock bearing
+Device Check Motion = Motion fusion
+Deep Mode
+Pro Status Free = Free
+Device Check Close = Close test
+OPENGL Information = OpenGL
+Support Donate us = Donate
+Device Check Storage = Storage capacity
+Metal Max Threadgroup Dimensions = Max Threads per Dimension
+Regex Template IPv4 Detail = Validate four decimal octets from 0 to 255
+Performance Monitor Metrics = CPU · Memory · Frame Rate
+Device Check Buttons Passed = User confirmed normal response from physical buttons
+Reset separately to independent cycles = Enable to separately configure reset periods and accumulation options for Wi-Fi and Cellular data.
+Cellular Network
+Device Check Report Column Status = Status
+Device Check Restored Attention = Previous check needs attention; run again for current details
+Telephoto 2.0x
+Wi-Fi Controller = Controller
+Device Check Proximity = Proximity sensor
+Restore Buy Pro Failure = Restore Failed
+Memory Working Set = Working Set
+Device Check Export Current Format = Export %@
+LED Marquee Background Stars = Stars
+Device Check Display Uniformity Hint = Check for uneven brightness, patches, and banding
+Floating Metrics Styles = Live Metrics
+FlowVC Cellular = Cellular
+Regex Copy Pattern = Copy Expression
+Floating Style Status Strip = Status Strip
+Device Check Touch Issue Hint = Records a touch screen issue in the report
+ThermalState critical = Critical
+Performance Benchmark Score Note = The composite index uses integer and floating-point throughput. Compare only within the same app version; it is not a Geekbench score.
+less storage = Storage
+Memory Benchmark = Memory Test
+Device Check Accelerometer = Accelerometer
+Performance Test Environment = TEST ENVIRONMENT
+Select Language = Preferred Language
+wwan tip msg = Speed testing consumes a slight amount of cellular data. It is recommended that you connect to a Wi-Fi network in order not to incur significant data charges. Continue anyway?
+Device Check Unlock Professional = Unlock professional tests
+Regex Matches Format = %lu matches · %.2f ms
+less battery = Power
+No test records yet
+Storage Total = Actual Capacity
+Compass Location Denied = Location access is off
+Input DataRefreshInterval placeholder = 0.1~60, default 1.0 sec
+MicRGBLight Title = RGB Pickup Lamp
+Compass S = S
+Regex Reference Structure = STRUCTURE
+Device Check NFC Evidence = NFC capability is listed; radio transactions require a compatible tag
+ExpiredTip Title = Watch video to get Pro for free
+Folded
+About Title = About CPU-x
+Regex Run = Run
+Device Check Title = Device Check
+Device Check Attention Title Format = %ld items need attention
+Device Check Attention = Attention
+Regex Replacement = REPLACEMENT
+Failed to retrieve gyroscope data
+Co-processor Properties = Coprocessor
+Device Check Connectivity Footer = iOS exposes current interface and capability state, but cannot test data transmission through every radio.
+Device Check Radio On = Currently on
+HasNoMoreVideoAdsNowButGiveReward = No ads now, we will give you a gift.
+Device Check Checking Title = Checking this device
+Device Check Guide Load Detail = Background work, charging, Low Power Mode, low storage, memory pressure, or thermal throttling can temporarily change performance, battery, and thermal readings.
+Clearing... = Optimizing memory...
+Buy Pro Restore... = Restoring Purchase ...
+Physical Height = Height
+Feedback Failure = Failed to send:%@
+Device Check Needs Setup = Needs setup
+Regex Ref Class = Character class / negated character class
+Battery Level
+%.0f KM = %.0f km
+Camera MaxPR = Max Photo Resolution
+Co-processor Type = Coprocessor Model
+Battery Voltage = Actual Voltage
+Floating Picture in Picture Hint = Runs in Picture in Picture. Drag or resize it after starting.
+Lamp Width
+Regex Mode Match = Match
+Reset Font Msg = Reset app font to default?
+LED Marquee Maximum Brightness = Maximum Brightness
+Regex Template Number = Signed Number
+Compass pressure %.2f = Pressure: %.2fkPa
+Device Check Progress Format = Completed %1$ld/%2$ld
+FlowVC WIFI = Wi-Fi
+Device Check Unsupported = Not supported
+Device Check Failed = Issue
+Regex Ref Groups = Capturing and non-capturing groups
+Regex Flag Ignore Case = Ignore case
+Regex Clear Workspace = Clear Workspace
+Performance Ready = Ready
+Compass Waiting Location = Acquiring location…
+Metal Read Write Textures = Read/Write Textures
+Device Check No Date = Not completed
+Device Check Guide Public API Detail = The app uses public, non-destructive interfaces. iOS does not expose Apple factory diagnostics, calibration records, repair history, detailed battery health on every model, or internal electrical measurements.
+Wwan Recv = Data Downloaded via Cellular
+Device Check Report Failed Message = Please check available storage and try again.
+Floating Style Battery = Battery
+Device Check User Passed Evidence = User confirmed normal operation during the interactive test
+LED Marquee Text Placeholder = Enter message
+Floating Estimated Runtime = Estimated runtime
+GPS Latitude = Latitude
+Input BatHealth title = Enter battery health
+MegaPixels =  MegaPixels
+LED Marquee No Recent Text Message = Add frequently used text for quick access.
+• Pure Blue: ~240°
+Pro Permanent Active Subtitle = Lifetime Pro · All features unlocked
+Device Check Restored Passed = Previously verified; run again to refresh details
+User Name = Device Name
+Input BatHealth error title = Input value error
+Compass Tip Compass Locked = Locked at %.0f° · Tap compass to clear
+Cellular Peroid Flow Max = Cellular Period Limit
+Device Check Restored Available = Previously detected as available; run again to refresh details
+Screen Information = Screen Specs
+Device Check Microphone Passed Format = Live audio received · peak %.0f dBFS
+LED Marquee Reset = Reset
+Raw MF Y Axis = Y Axis
+Battery Status = Status
+Altimeter Relative Altitude = Relative Altitude
+Mem PageOuts = PageOuts
+Mem Tool First Depth = Depth free
+Microphone startup failed
+Mem Inactive = Inactive
+Date: 
+Motion Activity = Activity
+Need Pro = Trial ended
+Sensors Title = Sensors
+Bar Spacing
+Device Check Location Disabled = Location Services is disabled in system settings
+Device Check Internet Offline = Internet test skipped because no active network interface was detected
+LED Marquee Display = Display
+Buy Pro Success = You're all set!
+Floating Window = Floating Bubble
+Rotation Roll = Roll
+Plan Unlimited = Unlimited
+Buy Pro Failure = Purchase failed
+GPU Type
+Device Check Issue Found = Issue found
+Vibe Sweep = Sweep
+Device Check Brightness Failed Format = User reported an abnormal brightness response · tested %ld%% to %ld%%
+Bluish = Bluer
+Compass Pressure Unavailable = Pressure: -
+Compass N = N
+LED Marquee Text Color = Text Color
+Bat available time = %d h %d m
+Bool NO = No
+Report App Version = App version
+Device Check Filter All = All
+Storage Device Model = Capacity
+Copy Value
+History Records
+Device Check Volume Up Hint = Press the volume-up button once within eight seconds. The current output level is already at minimum.
+Device Check Shake Running = Waiting for two distinct shake movements...
+Device Released = Released
+Device Check Shake Unsupported = Accelerometer data is not available on this device
+Screen Technology = Technology
+Neural Engine
+Regex Template Email = Email Address
+Single Core = Single-Core
+Test Progress: %d%% = Progress: %d%%
+NO
+not available = Unavailable
+Start Nature Test = Run Benchmarks
+Current screen brightness
+Xingneng Title = Performance Test
+Theme Auto = Automatic
+CPU Current Speed = Current Frequency
+Device Check Report Preview = Report preview
+Regex Line = Line
+Device Check Recording Clear = Recording is clear
+Compass Total Distance = TOTAL DISTANCE
+Regex Ref Unicode = Unicode Han script property
+Refresh All Widgets
+Report Identifier = Report ID
+Compass Trip Distance = TRIP DISTANCE
+HasNoMoreVideoAdsNow = No videos available at the moment, please wait for a little while
+Input BatCap error msg = The value entered must be greater than 0
+Device Check Guide Environment Detail = Low light, strong magnetic fields, loud surroundings, weak GPS reception, vibration, or an unstable surface can make camera, compass, microphone, motion, and location results unreliable.
+Device Check CPU = Processor status
+Floating Style Network Trend = Network Trend
+LED Marquee Background Style = Background Style
+BatteryStateCharging = Charging
+Flow Clear Msg = This operation will clear all previous record.
+OS Max Supported OS Version = Max Supported Version
+Device Check Report Failed = Report could not be created
+Old Widget Enter = Enter
+Processor Title = Processor
+Watch Video = Watch video to get Pro
+iOS14 Widget = Home & Lock Screen Widgets
+Report Export Pro Title = Professional reports
+Device Check Display Intro Inspect = Check for bright or dark pixels, color patches, and abnormal lines
+Start Memory Benchmark = Start Memory Test
+Floating Picture in Picture Unavailable = Floating window unavailable
+Device Check Internet Failed Format = Internet verification did not complete · %@
+Physical Properties = Dimensions
+auto select = Automatic
+Device Check Battery Level Format = %ld%% charge · health estimate unavailable
+Device Check Guide Message = Automatic checks read current system data. Live checks require a fresh sensor sample. Interactive checks record your direct confirmation. ⏎  ⏎ Unsupported items are excluded from progress. Results are a non-destructive snapshot and do not replace Apple service diagnostics.
+Thanks About = Credit
+Floating Low Power = Low Power
+Device Check Shake = Shake response
+Performance CPU Benchmark Detail = Integer · Floating Point
+Speedtest record empty detail = The speed measurement results are shown here, you can delete by sliding left!
+Device Check Charging = Charging and connector
+Performance Display Parameters = Resolution · Refresh Rate
+RgxPh match = Match result
+Device Check Continue = Continue interactive tests
+Device Check Report Partial Banner Format = INCOMPLETE REPORT · %ld of %ld checks complete · %ld need setup · %ld pending
+LED Marquee Appearance = Appearance
+Device Check Guide Failed Detail = A required signal was missing or you confirmed abnormal behavior during an interactive test. Retry under controlled conditions; repeated results may require service inspection.
+From our other apps = From our other apps, made with ❤️
+Mode
+Device Check NFC Unsupported = NFC is not listed for this device profile
+Device Check Battery Invalid = Battery status is currently unavailable
+Device Check Display Pixel Hint = Check for bright or dark pixels and abnormal lines
+Device Check Restored Supported = Capability was previously detected; run again to refresh details
+My Blue = Blue-Green Boundary Test
+Regex Template ISO Date Detail = Find dates formatted as YYYY-MM-DD
+Today Weidgt = Widget
+Today ext how add tip = HOW TO ADD WIDGETS: In the Notification Center, swipe left to reveal the widget section, then scroll all the way down and tap [Edit] at the very bottom to add [CPU-x] to your widget list
+Performance Benchmark Foreground Tip = For consistent results, keep the app in the foreground and avoid other heavy tasks during the test.
+Widget Dark Mode = Dark Background
+Installed OS = OS
+Cellular
+Device Check Touch Failed Format = User reported an unresponsive area · %ld%% covered
+Start Btn = Start
+Device Check Proximity Waiting = Waiting for screen top coverage...
+Device Check Sensors Section = SENSORS
+Device Check Actions = Device check actions
+CPU
+Feedback Success, Ths your feedback = Message sent. Thanks for your feedback!
+Device Check Profile Missing = The hardware profile is incomplete
+Regex Template Hex Color Detail = Three, six, or eight hexadecimal digits
+Device Check Report Notes = METHOD AND LIMITATIONS
+Data Refresh Interval
+Device Check Biometric Passed Format = %@ authentication completed successfully
+Waiting for GPS signal...
+CPU Current Used = Usage
+LED Marquee Edit Text = Edit Text
+Device Check Battery = Battery status
+Device Check Guide Network Detail = VPN, proxy, Private Relay, captive portals, DNS filtering, weak signal, and interface switching can affect internet and DNS checks even when the radio hardware is healthy.
+Floating Reset Title = Reset session data?
+Performance Display Test Detail = Color · Uniformity · Pixels
+Assigned IP Addresses = IP Addresses
+Max Upload
+Device Check Speaker = Speaker
+Pro Exp Date = Pro Expiration
+Device Check Report System Format = System: %@ · Build %@
+Regex Ref Alternation = Match either expression
+Device Check Biometric Reason = Verify biometric authentication for the device report
+Device Check Completed = Completed
+HWRank Title = Benchmark Chart
+Device Check Checking = Checking...
+Screen captured
+Regex Mode Replace = Replace
+LiDAR
+Device Check Microphone Weak Format = No clear signal detected · peak %.0f dBFS
+Camera Test
+Device Check Proximity Uncover = Near state detected; now uncover the top of the screen
+Color Temperature = Color Temp
+Bluetooth
+Device Check NFC = NFC
+Device Summary Report Value = Value
+Flow Accuracy Tip = Due to iOS background restrictions, to maintain data accuracy, please enable 'Background App Refresh' in system settings and add the widget to your Home Screen. These actions help increase statistical calculation frequency.
+Performance Max Refresh Rate = Maximum Refresh Rate
+Regex Empty Match = Empty match
+Compass Location Accuracy Format = GPS accuracy ±%.0f m
+Battery wear click = Click to enter health
+Device Check Ready Title = Ready for a full device check
+Regex Ref Escaped Replacement = Insert a literal dollar sign or backslash
+Device Check Tap To Test = Test
+App GPSFit = Speedometer GPS
+Compass Tip Altimeter = Tap upper dial for altitude units; lower dial for pressure units
+Metal Unsupported = Unsupported
+Pro Free Trial Ad Button = Watch Video for Free Trial
+Device Check Report Summary = Summary
+Device Check Haptics Unsupported = Haptic hardware is not available on this device
+Acceleration X Axis = X Axis
+Output Unknown = Other Device
+SpeakerClean Title = Speaker Clean
+Device Check Brightness = Brightness control
+Cellular Peroid used data = Cellular Used Data
+Device Check Connectivity Section = CONNECTIVITY
+Device Check Display Result = Display result
+Device Check Guide Service Title = Seek service when needed
+Device Check Gyroscope = Gyroscope
+Device Check Proximity Timeout = No proximity state change was detected
+Device Check Sensors Footer = Motion sensors pass only after a live sample is received. Unsupported hardware is excluded from issue counts.
+Device Summary Scope Message = Choose the information to include.
+Device Check User Issue Evidence = User reported an issue during the interactive test
+Device Check Storage Detail = Available space is the room currently left for the system and apps. The percentage reflects the current file-system capacity.
+Device Check Address Private = Private address unavailable
+Failed to retrieve altimeter data
+Input BatHealth error msg = The value entered must be between 1 and 100
+IDFA btn cancel = Decide Later
+Device Check Haptics Confirm = Did you feel two distinct haptic pulses?
+Metal
+Device Check Report Title = CPU-x Device Diagnostic Report
+Pro Permanent All Unlocked = All features unlocked
+Floating Select Style Hint = Double-tap to select this floating style.
+Device Check Bluetooth = Bluetooth
+Device Check Guide Report Title = Keep a report
+Peroid used data = Data used
+Device Check Report Session Format = Test session: %@
+LED Marquee Speed = Speed
+Motion Coprocessor
+Device Check Charging Not Detected = No charging state detected; verify the cable, power source, and connector
+Charging animation = Charging Animation
+CPU Freq: = Freq.:
+Device Check Charging Hint = Connect a compatible charger, wait for the charging indicator, then verify again.
+LED Marquee Pause = Pause
+Device Check Unknown Device = Unknown device
+Pro Status Activated = Active
+Device Check Capability Unknown = Bluetooth capability is not listed for this profile
+Performance Real-time Monitoring = REAL-TIME MONITORING
+Compass Tool Pages = Compass tool pages
+Device Check Location Confirm = Did location, heading, and movement update normally?
+Regex Ref Range Quantifiers = Exact, minimum, and bounded repetition
+Screen Parameters = Display Specs
+After completing a test, the results will be displayed here.
+Raw MF Z Axis = Z Axis
+Metal Raster Order Groups = Raster Order Groups
+Physical Width = Width
+Altimeter Absolute Altitude = Absolute Altitude
+Memory Sequential Write = Sequential Write
+Device Check Guide Prepare Title = Prepare the device
+Bool YES = Yes
+Compass speed %@ = Speed: %@
+30-pin Dock
+Greenish = Greener
+Extreme Mode
+Device Check Pending = Pending
+Device Check Preparing Report = Preparing report
+LED Marquee Close = Close
+Output Bluetooth = Bluetooth Device
+Ultra Wide 0.5x
+Pixels
+Device Check Guide Scope Title = What this check can tell you
+LED Marquee Font Mono = Mono
+ANW section h1 = 
+CPU Calculate = CPU Benchmark
+Min Height
+Device Check Buy Pro Format = Unlock Pro · %@
+Device Check Storage Invalid = Storage capacity data is currently unavailable
+Automatically read clipboard = Automatically read pasteboard
+Permanent
+Device Check System Section = SYSTEM HEALTH
+RgxPh replace = Enter alternate text here
+Regex Reference Characters = CHARACTERS AND CLASSES
+Device Check Volume = Volume control
+FPS:
+Any Version
+Device Check Complete Title = Device checks completed
+Floating Style Network Trend Detail = Live upload & download
+Bluer than %d%% of the population. For you, turquoise is more %@.
+Compass North Toggle Hint = Tap the title above to switch between true and magnetic north.
+Pro Info = No ads & unlocks all exclusive features!
+Device Check CPU Invalid = A valid processor sample was not received
+LED Marquee Text Size = Text Size
+Floating Style Thermal Load = Thermal Load
+Memory Random Latency = Random Latency
+Today ext how add tip on ios14 = Swipe to the negative screen, then swipe to the bottom, and click [Edit]. After entering the editing state, swipe to the bottom again and click [Custom] to add it.  ⏎ If you can't find [CPU-x] or it shows that it cannot be loaded after adding, restart the system to recover.
+Device Check Battery Health Format = %ld%% charge · %d%% estimated health
+Pro Feature Advanced Widgets = Floating monitors
+Device Check Report Incomplete = Incomplete
+Cellular Currnet Connection = Current Connection
+Altimeter is not available
+Device Check Available = Available
+Regex Column = Column
+Regex No Matches = No Matches
+myblue iterations = Iterations:
+Device Check Capabilities Format = %ld capabilities
+LED Marquee Add = Add
+Device Check Not Ready = Not ready
+Regex Ref Capture Replacement = Insert capturing groups 1 and 2
+Device Summary Report Item = Item
+Cycling
+LED Marquee Background Blue = Blue
+Device Check Partial Report Title = Generate incomplete report?
+Select
+LED Marquee Empty Message = Add text before starting.
+%d of every month
+Device Check Findings = Findings
+%d h %d m
+Output Title = Output Device
+Device Check Method Automatic = Automatic check
+Screen Brightness = Brightness (Typical)
+Memory Tools = Actions
+Device Check Guide Interactive Detail = Opens a focused test for display, touch, camera, sound, buttons, and similar components. The app records your confirmation because iOS cannot objectively judge every visual, acoustic, or mechanical defect.
+Device Id = Motherboard ID
+Net wifi flow = WLAN Traffic
+Portrait
+Performance Parameters = PERFORMANCE PARAMETERS
+Theme Defalut = Light
+Unit and Carry
+LED Marquee Title = LED Marquee
+LED Marquee Right = Right
+EP Seg Source Code = Source Code
+Resume sensor sampling
+Device Check Report Column Evidence = Evidence
+Physical Depth = Depth
+Sensitivity
+Device Summary Current Category Format = Current category · %@
+Last 30 Days
+Mem Active = Active
+IP Details
+Device Check Open Settings = Open Settings
+LED Marquee Text Smaller = Decrease Text Size
+Device Check Haptics Failed = User did not feel the expected haptic pulses
+ANW section widgetRefresh head = Widget refresh button
+Device Check Network = Active network
+Device Check Speaker Confirm = Was the test tone clear and free of distortion?
+Restore Buy Pro Success = Restored
+Regex Title = Regex Test
+OS Kern Build = Kern Build
+Extended Capability
+Vibration Unavailable = Vibration Not Supported
+IDFA Msg = Allowing tracking will be used to provide advertising content that you are more interested in. Not tracking will limit personalized advertisements and will not reduce the number of advertisements. Tracking will only be used for ad impressions.
+Megnetic Accuracy = Accuracy
+Regex Ref Digit = Digit / non-digit
+Locked
+Device Check Guide Permissions Title = Permissions and system settings
+Compass Barometer Available = Barometer available · Altitude from GPS
+Unlock Pro to view
+Auto reset Wi-Fi Peroid = Auto Reset Wi-Fi Period
+Pro Temp Active Subtitle Format = Trial Active · Expires in ~%ld hr(s)
+Back Camera = Rear Camera
+Device Check Remaining Format = %ld interactive tests remain
+Device Check Biometric Unavailable = Biometric authentication is not ready
+Input DataRefreshInterval msg = Note: A lower data refresh interval will refresh the data faster, but it will also increase the power consumption of the App. Unit: second
+Last period balance, e.g: 2.3GB
+Device Check Guide Service Detail = Back up important data and contact Apple or an authorized service provider when a failure repeats, the device is damaged, overheats abnormally, swells, smells unusual, or becomes unsafe to use.
+CPU User = User
+Buy Pro Loading = Loading...
+myblue breif = Note: This test uses iterative approximation to find your perceptual boundary between blue and green. The range is HSL hue 140° (greener) to 210° (bluer).
+Device Check Guide Snapshot Title = A result is a snapshot
+Click to Reset = Tap to reset
+Device Check Report Not Ready Message = The report needs at least one completed result.
+Input Batwear error again = Re-enter
+Diagnostics
+Device Check Display Repeat = Test Again
+Regex Matches Truncated Format = First %lu matches shown · %.2f ms
+Device Check Memory Invalid = Memory pressure data is currently unavailable
+Storage Title = Storage
+OS Activeduration = Active Duration
+Save to clipboard = Save to pasteboard
+LED Marquee Reset Message = Text and display options will return to their defaults.
+Compass Barometer Short Available = Barometer available
+Device Check Cellular Unsupported = No cellular capability is listed for this device
+Regex Template Number Detail = Integers and decimals with an optional sign
+Donate level 3 = I Am Rich
+CPU System = System
+Feedback
+Device Check Start = Start full check
+Floating Style GPS Trip = GPS Trip
+Old Widget = Today Widgets
+Raw Magnetic Field
+Device Check Display Intro Tap = Tap anywhere to move to the next color
+Battery Wear Level = Health
+Initial: %d°
+Dark Black = Pure Black
+Device Check Permanent Pro Message Format = Automatic diagnostics remain free. Permanent Pro is required to unlock all interactive tests and reports in every supported format. ⏎  ⏎ Free interactive tests used on this device: %ld of %ld.
+Device Check Guide Methods Section = HOW CHECKS WORK
+Device Check Issues Title Format = %ld items need review
+Weiget backgroud colorful = Color Effect
+Performance Monitor
+LED Marquee Background Black = Black
+Device Check Microphone Denied = Microphone permission is denied in system settings
+Current Session
+Pro Reward Ad Get Tip = Thank you for watching the ad to support us
+Pro Temp Active Valid Long = Trial Active · All features unlocked
+Cell restorefree = Free
+Camera Aperture = Aperture
+Device Check Needs Setup Format = %ld need setup
+IDFA btn ok = Continue
+Regex Ref Basic Quantifiers = Zero or more, one or more, zero or one
+Rotation Yaw = Yaw
+Floating Style Core Clusters = Core Clusters
+Magnetometer is not available
+Altimeter
+Screen Color Gamut = Color Gamut
+Current EDR headroom
+Plan Unset = Unset
+Network Flow B = Network Traffic (since %@)
+Wagngsu Title = Speed Test
+(Height change relative to start)
+Wi-Fi Capabilities = Capabilities
+Set to app font = Set App Font
+Camera MaxVS = Max Frame Rate
+Regex Source Accessibility = Regular expression test text
+BT Version = Version
+Old Widget Removed Title = Legacy Widget Removed
+Device Summary Generated = Generated
+Device Check Progress Review Format = Completed %1$ld/%2$ld, %3$ld to review
+Compass Mode Compass = Compass & level
+Pro Status Trial = Trial
+Compass SW = SW
+Device Check Report Column Section = Section
+Device Check Guide Permissions Detail = Denied microphone, camera, location, motion, or local network access can block the corresponding test. Focus modes and system restrictions may also change behavior.
+Battery Capacity = Capacity
+Pro Feature Charts = Device reports
+Restore Buy Pro Failure Detail = Please make sure you have previously purchased our service before trying again.
+Turquoise
+Device Check Torch = Flashlight
+LED Marquee Reset Title = Reset Settings?
+Device Capabilities
+IntFloat1 Test Result = Test complete!  ⏎  CPU score: %ld ⏎  Floating point score: %ld ⏎  Integer operation score: %ld ⏎  These results are for reference only. Thank you for using and feel free to come back anytime.
+Regex Reference = Syntax Reference
+CPU Frr: = Frr.:
+Dynamic Island
+LED Marquee Choose Font = Choose Font
+Device Check Supported = Supported
+Output Speaker = Speaker
+Floating Peak Format = Peak %@
+Memory Physical Capacity = Physical Memory
+Delete
+Device Check Thermal = Thermal state
+Regex Error Source Too Long = The test text is too large. The limit is 500,000 characters.
+Wi-Fi Peroid used data = Wi-Fi Used Data
+Battery Details = Details
+Empty clipboard = Empty pasteboard
+Device Check Guide Temporary Title = Temporary system state
+Compass Altitude Accuracy Format = Altitude accuracy ±%.0f m · %@
+Floating Style Resources Detail = Memory & storage
+Device Check Camera Denied = Camera permission is unavailable in system settings
+Device Check Profile Detail = This shows the device model, system version, processor, and architecture reported by iOS.
+Device Check Report ID Format = Report ID: %@
+Device Check Guide Prepare Detail = Use a stable, quiet, well-lit location. Disconnect optional accessories, remove magnetic mounts, keep enough free storage, and let an overheated device cool down.
+Device Check Volume Passed Format = System output level changed from %ld%% to %ld%%
+Every %d days
+Device Check Report Not Ready = Run a check first
+Device Check Shake Passed Format = Two live acceleration peaks detected · %.2f g dynamic response
+Save
+LED Marquee Search Fonts = Search Fonts
+Device Check Pro Accessibility = Requires Pro access
+Device Check Guide Repeat Detail = Run an affected item at least twice after correcting permissions and environmental factors. Compare the evidence and time rather than relying only on the status color.
+Screen Contrast = Contrast Ratio
+LED Marquee Resume = Resume
+Bar Count = Spectrum Bars
+Device Check Running = Checking
+Regex Characters Format = %lu characters
+Device Check Microphone Playback Issue = A live signal was captured, but the recording was not clear
+This test is equivalent to %@ bandwidth
+Device Check Microphone Playback Failed = Audio was captured, but playback verification could not start
+Device Check Thermal Fair = Fair
+Lamp Count
+Weidgt reboot tip = ⚠️ If the widget is abnormal, you can try to restart the system to restore; the desktop widget is different from the today widget and cannot be refreshed in real time. If you need to check the CPU, network speed info, please add the old today widget. ⏎ 😳Why do widgets need location permissions? The system requires the location permission to be able to read the wireless network name data, so if you want to display the wireless network name, you need to allow the widget location permission, otherwise you don’t need it.
+Network Flow = Network Traffic (since last reset)
+Reset Wi-Fi Flow
+Pro Upgrade Permanent Format = Upgrade to Lifetime Pro · %@
+Unknown
+Reset Font Title = Reset App Font
+Device Check Internet = Internet and DNS
+Mem PageFaults = PageFaults
+Device Check Passed Format = %ld passed
+Regex Template UUID Detail = RFC 4122 UUID versions 1 through 5
+CPU Design Speed = Design Frequency
+Device Check Interaction Required = Interactive verification required
+Gyroscope is not available
+Reset Flow = Reset Traffic Statistics
+OS Still Supported = Still Supported
+ThermalState fair = Fair
+Metal Ray Tracing = Ray Tracing
+LED Marquee Font = Font
+Battery Size Physical SIM Card Footer = If your device has a SIM card slot, it affects the actual size and capacity of the battery. Please input this to calibrate the maximum battery capacity.
+Orientation
+CPU-z = CPU-x
+Automotive = Driving
+CPU Technology = Process
+Lamp Corner
+Are you sure you want to delete all test records? This action cannot be undone.
+BatteryStateUnplugged = Draining
+Device Check Memory Evidence Format = %@ total · %ld%% pressure
+Device Check System Profile = System profile
+Requires a system below iOS 18.0 = Requires below iOS 18.0
+Device Check Offline = No active network interface; verify again when online
+Reset Time on Reset Day
+Device Check Microphone Live Format = Live peak %.0f dBFS
+Iterations: %d times
+Compass Barometer Short Unavailable = Barometer unavailable
+Pro Purchased On Format = Purchased %@
+CPU Core Count = Core Count
+LED Marquee Pro Title = Unlock Creative Styles
+Performance Integer Throughput = Integer Throughput
+Device Check Guide Influences Section = POSSIBLE INFLUENCES
+FlowVC Date = Date
+Focus Mode
+Device Check Run Again = Run automatic checks again
+IP Gateway = Gateway IP
+Device Check Report Summary Format = Passed %ld    Available %ld    Inactive %ld    Attention %ld    Issues %ld    Needs setup %ld    Pending %ld    Unsupported %ld
+Regex Recent = RECENT
+Wwan Flow = Total Cellular Traffic
+Device Check Report Column Check = Check
+GPS
+Auto reset Flow = Auto-reset of every month
+Current Selected = Selected
+LED Marquee Save = Save
+GPU Cores = GPU Core Count
+Regex Ref Whole Match = Insert the complete match
+Testing Completed! = Test Completed!
+Performance Live Status = Live Status
+Device Check Guide Unsupported Detail = The hardware or required public iOS interface is not available on this device. It is shown in yellow, excluded from progress, and is not counted as a fault.
+Device Check Volume Waiting Format = Waiting for a volume change · current level %ld%%
+Got it
+Pro Temp Active Less Hour = Trial Active · Expires in <1 hr
+Mem Clean Msg = Successfully freed up %@ ⏎ The current free memory is %@
+Device Check Charging Passed = The system reported an active external power connection
+Device Check Guide Subjective Detail = Dead pixels, color uniformity, touch feel, speaker distortion, camera sharpness, vibration strength, and physical buttons ultimately depend on what you observe and confirm.
+Device Check Guide Version Detail = Hardware capabilities and public API behavior vary by device model and iOS version. A missing capability can be expected for that model rather than a defect.
+Device Check Touch = Touch screen
+LED Marquee Background Neon = Neon Grid
+RgxPh regex = Enter a regular expression here
+Peroid Flow Max = Data plan limit
+This feature requires microphone permission to be enabled
+Volume Warning = ⚠️ Warning: Volume is too high. Avoid wearing headphones to prevent hearing damage.
+LED Marquee Font Rounded = Rounded
+OS Upduration = Running Duration
+Net daliy flow = Today's Data Traffic
+Screen Test = Display
+EP Seg Image = Image
+Mem Type = Memory Type
+Compass E = E
+Device Check Battery Detail = Charge and mAh values come from the current battery data. Voltage and connection state describe the device's current power status.
+Clipboard emptied = Pasteboard emptied
+None
+Floating Select Style = Floating Style
+Device Check Touch Progress Format = Coverage %ld%% · Touches %ld
+Latitude and longitude: = Cood:
+Performance Benchmark Result = BENCHMARK RESULT
+Floating Style Traffic Session = Traffic Session
+Free Pro
+Acceleration Y Axis = Y Axis
+Default
+Device Check Export Options = Export report
+Device Check Storage Evidence Format = %@ free of %@
+Memory Benchmark Allocation Failed = Not enough memory to run the test.
+Basic Properties = Basic
+Device Check Buttons Confirm = Press the volume up/down and side controls. Confirm normal click and system response. iOS has no reliable general-purpose button diagnostic API.
+Device Check Camera Incomplete Format = Live frames verified from %ld of %ld physical cameras; open the test and switch through every lens
+Device Check Memory = Memory pressure
+Need Pro Tips = You can either purchase the Pro version permanently or watch a video to enable Pro for a short period of time ads-free and restriction-free.
+Screen VR = Vertical Resolution
+Camera ISO = ISO
+Reset Flow Success = Reset traffic statistics success
+LED Marquee Background Aurora = Aurora
+Compass NW = NW
+Device Check Report Format = Report format
+Color Mode = Change Icon
+Rotation
+Device Check Finish = Complete test
+Floating Performance Styles = Performance & Network
+LED Marquee Done = Done
+Regex Template Han Detail = Match contiguous Unicode Han characters
+continue = Continue
+Lamp Spacing
+Megnetic X Axis = X Axis
+Donate level 2 = Surprise
+LED Marquee Background Purple = Purple
+Regex Common Patterns = COMMON PATTERNS
+Floating Reset Message = Elapsed time, distance, and traffic recorded by this style will be cleared.
+Regex Ref Space = Whitespace / non-whitespace
+Regex Replacement Accessibility = Replacement template
+Boundary hue: %d°
+Floating Style Clock = Clock
+Device Check Later = Not now
+Device Check Listening = Listening for a live signal...
+Device Check Speaker Not Played = No test tone was verified on the built-in speaker; play a tone and try again
+Field of View
+Floating Style Core Clusters Detail = E-core & P-core load
+Input BatCap title = Enter the actual battery capacity
+Standard Mode
+Device Check Microphone Playback = Playing the captured sample through the built-in speaker...
+Device Check Restored Failed = A previous check reported an issue; run again for current details
+Tap data to switch units
+App CustomIsland = Dynamic X
+Camera Exposure = Shutter
+Device Check Torch Confirm = Did the rear flashlight turn on briefly?
+Memory Benchmark Note = Measures in-app buffer throughput and latency. Cache, temperature, and background activity affect results; compare under the same app version and conditions.
+Device Check Components Footer = Sight, sound, touch, and imaging quality require an interactive test or user confirmation.
+Device Check Remaining = Remaining
+Minimum Focus = Min Focus
+Device Check Display Hint = Inspect the screen, then tap to continue
+Device Check Touch Finish Hint = Completes the test after enough of the grid has responded
+Waiting for data...
+Floating Location Styles = Location & Trip
+Low
+Compass Barometer Title = BAROMETER
+Regex Reference Quantifiers = QUANTIFIERS
+Performance Display Test = Display Diagnostics
+• Cyan: 180°
+Altimeter Falling = Falling
+Device Check Buttons Failed = User reported an issue with a physical button
+Device Check Reset = Reset results
+Data Flow = Traffic Statistics
+Data limit, e.g: 3.5GB
+Device Check Attention Format = %ld attention
+Device Check Speaker Passed Evidence = Built-in speaker route played successfully; clarity confirmed
+Device Check Torch Passed = User confirmed flashlight illumination
+Light Tube
+Copy Row
+Vibe Fibonacci = Pulse
+Megnetic Y Axis = Y Axis
+LED Marquee System Font = System
+Regex Ready = Ready
+Device Check Display Intro Title = Pixel and Uniformity Test
+Go to Pruchases = Get Pro
+Altimeter Status = Status
+Device Check Reset Confirm = Reset
+History
+Regex Flag Extended = Ignore pattern whitespace and comments
+Lens Position
+Device Check Display Intro Clean = Clean the screen first so dust is not mistaken for a defective pixel
+Device Check Touch Passed Detail Format = %ld%% grid coverage · up to %ld simultaneous touches observed
+%dg
+Device Check Reset Message = Clear all saved results for this device? This cannot be undone.
+Regex Preview = REPLACEMENT PREVIEW
+Cellular Capabilities = Capabilities
+Unsupported
+LED Marquee Background Color = Background Color
+GPS Speed: = Speed:
+Buy Verify Error = Order Verification Error
+LED Marquee Background Red = Red
+Donate us foot = Note: Donate will not unlock the Pro version
+Wwan Send = Data Uploaded via Cellular
+Device Check Pro Message Format = Automatic diagnostics remain free. Pro unlocks all interactive tests and reports in every supported format. ⏎  ⏎ Free interactive tests used on this device: %ld of %ld.
+Device Check No Camera = No camera is available on this device
+Vibe Spasm = Spasm
+Device Check Display = Display
+OPENGL Extensions = OpenGL Extensions
+Battery Title = Battery
+Regex Ref Anchors = Start, end, and word boundary
+Storage Used = Used
+App dbMeter = Decibel Meter
+Device Check Report Sheet Name = Device Check
+Device Check Display Passed Evidence = User confirmed uniform colors and no visible defects
+Input BatCap placeholder = Actual capacity, such as: 3969mAh
+Memory Copy
+Regex Template ISO Date = ISO Date
+Restore Buy Pro Success Detail = Purchase restored. Thank you for your support!
+Device Check Guide Automatic Detail = Reads current processor, memory, storage, thermal, battery, network, and capability data exposed by iOS. It does not stress the device or request unrelated permissions.
+Desktop widgets have been updated
+Device Check Restored Blocked = Previous check could not be completed; review settings and try again
+Compass Reset Total Distance = Reset total distance
+Regex Ref Any Character = Any character except a newline, unless the s option is enabled
+Floating System Styles = System Views
+Performance Integer Score = Integer Score
+Regex Library = Pattern Library
+GPU Properties = GPU
+Device Check Pro = PRO
+ANW section widgetRefresh foot = After enabling "Refresh on right area", clicking on the right one-third area on the right side of the widget will refresh it once, and this feature will also work on the lock screen widget. Clicking on the left one-fifth of the health widget will jump to the system's health app
+Failed to retrieve device motion data
+Memory Title = Memory
+Performance Ranking Detail = Geekbench device rankings
+Screen Ratio = Aspect Ratio
+Ads Title = Ad
+Stop Floating = Stop
+Device Check Volume Down Hint = Press the volume-down button once within eight seconds. The current output level is already at maximum.
+Megnetic Z Axis = Z Axis
+Mem Free = Free
+IDFA Tip = Reduce irrelevant ads
+Theme Black = Dark
+Reset Cellular Flow Success
+wg2 ln Device Hot = Thermal State
+Stationary
+Need Pro Msg = Please purchase Pro to enable this feature. Thank you for your support!
+Device Check Biometric Failed = Biometric authentication was not completed
+Speed Recv = Download Speed
+Bar Corner
+LED Marquee Edit = Edit
+LED Marquee Blink = Blink
+Floating Style System Overview = System Overview
+Buy Pro Success Detail = Purchase successful. Thank you for your support!
+Floating Style Compact System = Compact System
+Device Check One Needs Setup Title = 1 test needs setup
+OS Initial OS Version = Native OS Version
+Physical Weight = Weight
+CPU Properties = CPU
+OK
+Compass Switch Tool Hint = Double-tap to switch tools
+OPENGL Version = Version
+Regex Checking = Checking...
+Device Check Torch Failed = User did not observe flashlight illumination
+Floating Style Network Dashboard = Network Dashboard
+Ruggedness
+ruler-cm = %.2f cm
+IP DNSs = DNS IP
+Device Check Display Tap Finish = Tap anywhere to finish
+GetPro Message =  ⏎ Immerse yourself in an ad-free experience with all Pro features unlocked! If you've enjoyed this app so far, please rate & leave a review for us on the App Store. We appreciate your time and effort! ⏎  ⏎ As an alternative, you can also watch a video to get several days of Pro features for free. You may repeat this process to get infinite amount of Pro experience without spending a nickel.
+ThermalState nominal = Nominal
+CPU Microarchitecture = Microarchitecture

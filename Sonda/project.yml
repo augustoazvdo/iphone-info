@@ -1,0 +1,70 @@
+name: Sonda
+options:
+  bundleIdPrefix: com.azvdo
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+packages:
+  GoogleMobileAds:
+    url: https://github.com/googleads/swift-package-manager-google-mobile-ads
+    from: "13.12.0"
+
+targets:
+  Sonda:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sonda
+    dependencies:
+      - package: GoogleMobileAds
+      - target: SondaWidget
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.azvdo.sonda
+        INFOPLIST_FILE: Sonda/App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Sonda/App/Sonda.entitlements
+        SWIFT_OBJC_BRIDGING_HEADER: Sonda/Native/Sonda-Bridging-Header.h
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Sonda
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: A Sonda usa a localização para mostrar o nome da rede Wi-Fi e a bússola.
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: A Sonda usa o microfone para medir o nível de ruído em decibéis.
+        INFOPLIST_KEY_NSMotionUsageDescription: A Sonda usa os sensores de movimento para mostrar acelerômetro, giroscópio e barômetro.
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_TESTABILITY: YES
+
+  SondaWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Widget
+      - path: Sonda/Monitoring/WidgetSnapshot.swift
+      - path: Sonda/Monitoring/Percent.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.azvdo.sonda.widget
+        INFOPLIST_FILE: Widget/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Widget/SondaWidget.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+
+  SondaTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: SondaTests
+    dependencies:
+      - target: Sonda
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.azvdo.sondaTests
+        GENERATE_INFOPLIST_FILE: YES
